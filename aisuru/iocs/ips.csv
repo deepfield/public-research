@@ -20,6 +20,7 @@ ip,asn,role,first_seen,notes
 165.227.20.219,AS14061,c2_dns_txt,2025-11,From ohbro.krebstresser.st; resolved 2026-03-11
 137.184.76.92,AS14061,c2_dns_txt,2025-11,From ohbro.krebstresser.st; resolved 2026-03-11
 157.245.90.173,AS14061,c2_dns_txt,2025-11,From ohbro.krebstresser.st; resolved 2026-03-11
+158.94.210.88,AS202412,c2_fallback,2025-12,Hardcoded in crossover ARC700 build (3d0cf1d0)
 5.35.45.162,AS216071,c2_fallback,2024-08,Hardcoded in gen1 binaries
 5.35.44.21,AS216071,c2_fallback,2024-08,Hardcoded in gen1 binaries
 166.1.160.38,AS41745,c2_fallback,2024-08,Hardcoded in gen1 binaries

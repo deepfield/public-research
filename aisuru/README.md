@@ -18,7 +18,7 @@ The following publications provide essential context. Aisuru has been well-cover
 
 - **Lineage:** Mirai fork with substantial custom additions across generations
 - **C2 evolution:** DNS A + HTTP GET (Aug 2024) → DNS TXT with CAFEBABE XOR (Oct 2024) → 0x1CEB00DA magic + HMAC-SHA256 auth (Mar 2026)
-- **Architectures:** x86, ARM, AArch64, MIPS, ARC700
+- **Architectures:** x86, x86-64, ARM, AArch64, MIPS, ARC700
 - **Crypto:** 16-byte table encryption keys (gen1: `DEADBEEF CAFEBABE 12345678 90ABCDEF`; gen2: `PJbiNbbeasddDfsc`), custom RC4 with 5-pass LCG S-box scramble
 - **Connectivity check:** HTTP GET to a legitimate third-party site before C2 contact
 - **Android vector:** Transitional APKs observed bundling native ELF payloads (Sep 2025)
