@@ -1,0 +1,15 @@
+sha256,arch,first_seen,description
+39682d9b4ef8d9730e6c090a161d28d34cb47d9e4548344119a731f34d3867e0,x86,2024-08-21,Gen1 earliest; DNS A + HTTP GET C2; .ru domains
+3fe583fb7fa6646b25765553eb9495275daa2a17bf393e816dd33009e366f48a,ARM,2024-10-13,Gen1; full features; DEADBEEF key; DNS TXT C2
+75a1199fbf8abd52bc957b07ff7574ddc98719272ad9f2f0d427178ac1c60967,ARM,2024-11-01,Gen1; SOCKS5 proxy variant
+ab67a6ae19b9d0fc79840894a257a2ece9110e13a027b7c19c8b3a99b88cdc49,ARM,2024-11-02,Gen1; standard variant
+d07e4ff966f0852a0d7832b55c20ac47bbe9c6bd2fabf0253695a3cd231363cf,ARM,2024-11-08,Gen1; anti-researcher UA (GCore)
+02356742d3564b258677fe18441eb71defc05ec029a53e31a1f2ce6a3d7acedb,MIPS,2025-03-20,Gen1; MIPS architecture
+50d3806f47d3f701d5f1f93bf39f827f936e3d1f43fa2cd8408db9655d53fb83,ARM,2025-08-23,Gen2; stripped
+90e3b997161e33c6485b48182073a864dd3d0775ab96cadbf1b7c9dd4821c6d1,AArch64,2025-09-20,Gen2; stripped; bundled in APK 5d20d294 as ji.so
+7500925a26cecd84ebed2914855cdf0812a18661e1bb6f3c91dede36f34bd7f3,ARM,2026-03-06,Gen2 latest; 0x1CEB00DA magic; HMAC-SHA256 auth; fallback 185.196.41.180
+42aea37337e2b2cc306bf363b15f7f7cf962b87db3b4d4449d7e13e31d8f434e,ARM,2025-09-01,Crossover variant; shared credentials with related botnet
+6039ff1c2c6d9a8675c66655fa98c08b461c5ed90b33de19648689c27a7a7756,x86-64,2025-08-31,Crossover variant; shared credentials with related botnet
+3d0cf1d0f39440d54f1025583017c733647ac09f43397268a0d138f981b5127d,ARC700,2025-12-29,Crossover variant; C2 158.94.210.88; Cursor IDE artifact
+5d20d2942d39c79e971bac7de90de11b23308195b0ea06d4009fc561c6da7199,APK,2025-09,"Transitional APK; bundles gen2 ELFs (C0.so, ji.so, q8.so)"
+84cf4aac1e063394be3be68fea3cb9526e567c0aeaaf39b4834411970c00921e,APK,2025-09,Transitional APK; com.n2.systemservice0644; UPX-packed ji.so

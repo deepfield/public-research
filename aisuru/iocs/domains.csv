@@ -1,0 +1,13 @@
+domain,c2_method,first_seen,status,notes
+ministry.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-11
+lane.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-11
+coerece.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-11
+approach.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-11
+dvrxpert.tiananmensquare1989.su,dns_txt,2025-06,active,"10 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
+stevenfromcoinbase.fk3.su,dns_txt,2025-10,active,"2 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
+dvrexpert.st,dns_txt,2025-11,active,"3 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
+public.dvrexpert.st,dns_txt,2025-11,active,"3 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
+ohbro.krebstresser.st,dns_txt,2025-11,active,"3 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
+dvrsupport.st,dns_txt,2025-11,inactive,No TXT data observed; checked 2026-03-11
+printerconsulting.ru,dns_a,2024-08,inactive,Pre-DNS-TXT era; no A/TXT; checked 2026-03-11
+foxnointel.ru,dns_a,2024-08,inactive,Pre-DNS-TXT era; no A/TXT; checked 2026-03-11

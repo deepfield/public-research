@@ -1,0 +1,6 @@
+key_hex,purpose,notes
+DEADBEEF CAFEBABE 12345678 90ABCDEF,table_encryption,Gen1 16-byte crypto key
+CAFEBABE,dns_txt_xor,4-byte XOR key for DNS TXT IP decoding; all generations except latest
+1CEB00DA,c2_protocol_magic,Gen2 latest (7500925a); replaces CAFEBABE handshake
+PJbiNbbeasddDfsc,table_xor,Gen2 16-byte table XOR key
+DEADBEEF 13370420,c2_handshake,Gen1 earliest (39682d9b) handshake magic
