@@ -4,6 +4,10 @@ Threat research from the Nokia Deepfield Emergency Response Team (ERT), focused 
 
 This repo consolidates prior community research with original Deepfield ERT analysis. See individual READMEs for references and attribution.
 
+> **Note:**
+> - Indicators are provided in their raw (not defanged) form so they can be consumed directly by detection tooling. Exercise caution when handling URLs and domains.
+> - Some indicators contain offensive or vulgar language chosen by threat actors for branding or anti-analysis purposes. These are reproduced verbatim to facilitate detection and attribution.
+
 ## Contents
 
 | Directory | Description |
