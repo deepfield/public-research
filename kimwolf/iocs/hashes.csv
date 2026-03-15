@@ -1,0 +1,20 @@
+sha256,arch,first_seen,description
+72142e7a704e2b5f7da279af349c5490eaa8b5cac83015e7115b10796f1af641,ARM,2025-12,"Gen 1; WolfSSL 5.8.2; ENS pawsatyou.eth key lol; jemalloc; XOR-obfuscated .st fallback domain"
+7179a36d0706ff69fa9d3a43cafd1784cc335d36203549858a889d9d2a0e8c95,ARM,2025-12,"Gen 1; WolfSSL; ENS pawsatyou.eth key lol; crypto bot variant (flashbots.net, 0xrpc.io)"
+9e9b856176ede78919d4b49f6710bfa7e4e447c7d9aa6cb749fa34511f2b91a0,AArch64,2025-12,"Gen 1; WolfSSL; ENS pawsatyou.eth key lol; AArch64 crypto bot variant"
+99443ec987417f05f52cf6e0e4f3d51021b37e24c857ad9ae70b08c060c4d139,ARM,2025-12,"Gen 3 AbcProxy; BoringSSL; ENS pawsatyou.eth key candy; build path /home/SylviaFennec/AbcProxySDK/"
+fa97449d116ab8a1428cefb1dcaed5fd2b16379719bba11b5cdc93ddcd2427c8,ARM,2025-12,"Gen 2 AbcProxy; BoringSSL; ENS pawsatyou.eth key candy; build path /home/SylviaFennec/AbcProxySDK/"
+cc280f9d27ee8e95e36847cbfae94143498f42ce457b2e46e0bb355e0ad6fe0c,ARM,2025-12,"ByteConnect SDK agent; 85KB; C2 new-endpoints.byteconnect.io:80"
+5b2475d4915c5aecbeb66f52fb4e5b5c342144830cc32cc039a6573b5b6cb2ff,ARM,2026-01,"Gen 2 AbcProxy; BoringSSL; ENS re6ce.eth key pktstrm; two-step IP deobfuscation"
+5a9aa70db6a015ffc1b5973c5315c4f18550c44e914d81581a135fd804995f53,APK,2025-12,"Gen 1 APK dropper; installs libdevice.so (UPX-hardened proxy bot)"
+b9047ded41187be3c15d0d183e4fdd3d38c8f2fe16dcc495a68d12e5c7ff0f8c,APK,2026-01,"Dual payload APK; bundles libdevice.so + libbcsdk.so (ByteConnect)"
+54c478b499829a41f57edf93753b9842ab67dc13cff2cc1326ad7ced2f3dc0b9,APK,2025-12,"com.abcproxy.proxysdk dropper"
+fb967e4daa07ff3777fd4495133bef6544676a315409990f68057506d706c1e4,APK,2025-12,"libdevice_emu.so + device_task assets"
+569ef3c50d8c1bb48729c04fc334f26f644ff799c7ba3a514610e85f53cca3d5,APK,2026-01,"com.example.networkservice dropper"
+204edbbd9ab906160ea75c77681a47a21f018f18eca0927a901df6fe24fbd532,APK,2026-01,Kimwolf dropper
+91ef495bf2764f89c97d7c9945e5e32244d64b00e12bb6c642f64bc9f17bce30,APK,2026-02,APK variant
+68ea5dc48101d8bd27c4b237093025d8cf5b9d9985dc96363f2c7882f2b56341,APK,2026-02,"APK with bundled Tor; ENS byniggasforniggas.eth key n2; com.android.logcatd; root+fallback execution"
+951c94809aa6c7ab587125f9d4df30fa6a49ee0cbba76a4b7ceedaaa0e5dcd36,APK,2026-03,"Repack of 68ea5dc4 for non-rooted devices; direct ProcessBuilder execution; proxy-only mode"
+f9590bbbebe9873b3e91da1cf6d43f4bf9610ce3d3b7f040c2605421b9e2a870,bundle,2026-02,"Bundle: 99443ec9 ELF + APK + install script"
+3a7b5a13fd91a0beb33f64f3e630946fdde67078e27f5af11e602e36f55bca36,shell,2026-02,"Install script; dropper 89.39.70.40:8081/8082; targets com.a.androidsvc"
+e8f73f650397fa0f025468197415f7331f67da7363114815a97ce106be22b472,shell,2025-12,"payload.sh; Android dropper script"

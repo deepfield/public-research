@@ -13,3 +13,4 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | Directory | Description |
 |-----------|-------------|
 | [aisuru](aisuru/) | Mirai-derivative DDoS botnet, active since August 2024 |
+| [kimwolf](kimwolf/) | Dual-purpose residential proxy and DDoS botnet, 3M+ devices observed |
