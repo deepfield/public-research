@@ -1,0 +1,15 @@
+ip,port,asn,org,country,role,first_seen,notes
+91.92.241.12,5880,AS202412,Omegatech LTD,NL,C2 (hardcoded; unresponsive 2026-03-16),2026-02-22,Resolves from all 3 C2 domains; registered in Seychelles
+91.92.241.12,6969,AS202412,Omegatech LTD,NL,C2 (active),2026-02-22,ThreatFox ID 1752404; confirmed active via C2 monitoring
+72.56.52.10,5880,AS39900,SIA GOOD (goodtec.lv),LV,C2 (active),2026-03-15,Resolves from all 3 C2 domains
+72.56.52.10,6969,AS39900,SIA GOOD (goodtec.lv),LV,C2 (active),2026-03-15,Resolves from all 3 C2 domains
+65.222.202.53,5880,AS701,Verizon Business,US,C2 (hardcoded fallback),,In binary .text section
+87.121.84.74,13121,AS215925,vpsvault.host,NL,ADB staging (APK),,Serves com.system.update APK (app.apk)
+87.121.84.74,13122,AS215925,vpsvault.host,NL,ADB staging (ELF),,Serves ARM7 ELF binary (arm7.kok)
+87.121.84.74,13123,AS215925,vpsvault.host,NL,ADB staging (APK),,Serves com.google.android.update APK (wow.apk)
+87.121.84.74,80,AS215925,vpsvault.host,NL,ADB staging (fallback),,Fallback port for APK delivery
+87.121.84.74,443,AS215925,vpsvault.host,NL,ADB staging (fallback),,Fallback port for ELF delivery
+45.153.34.187,13121,AS51396,pfcloud.io,NL,ADB staging (APK fallback),2026-03-16,Secondary staging for com.system.update APK
+45.153.34.187,13122,AS51396,pfcloud.io,NL,ADB staging (ELF fallback),2026-03-16,Secondary staging for ARM7 ELF binary
+45.153.34.187,80,AS51396,pfcloud.io,NL,ADB staging (fallback),2026-03-16,Fallback port for APK delivery
+45.153.34.187,443,AS51396,pfcloud.io,NL,ADB staging (fallback),2026-03-16,Fallback port for ELF delivery

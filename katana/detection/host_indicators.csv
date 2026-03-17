@@ -1,0 +1,29 @@
+path,type,description
+/data/local/tmp/.bot_hb,file,Bot heartbeat file (IPC)
+/data/local/tmp/.bot_ipc,file,APK liveness check (IPC)
+/data/local/tmp/.bot_errors,file,Error drain file (IPC)
+/data/local/tmp/tcc,file,TinyCC compiler
+/data/local/tmp/rkloader,file,Rootkit loader
+/data/local/tmp/rkcompiler,file,Rootkit compiler
+/var/.update,file,Persistence binary
+/var/tmp/.update,file,Persistence binary (alternate)
+/var/log/.update,file,Persistence binary (alternate)
+/tmp/.update,file,Persistence binary (alternate)
+/var/.monitor,file,Monitor process
+/var/tmp/.monitor,file,Monitor process (alternate)
+/tmp/.monitor,file,Monitor process (alternate)
+/var/.domains,file,Domain persistence file
+/tmp/.domains,file,Domain persistence file (fallback)
+/data/local/tmp/.domains,file,Domain persistence file (fallback)
+/tmp/.dns_cache,file,DNS cache file
+/etc/init.d/S99system,file,SysVinit persistence script
+/etc/init.d/S99network,file,SysVinit persistence script
+/etc/init.d/S99backup,file,SysVinit persistence script
+/data/adb/modules/systemupdate/,directory,Magisk module persistence
+/system/priv-app/SystemUpdate/,directory,System partition persistence
+/system/bin/logd_helper,file,System partition persistence binary
+/proc/wlanhelper,procfs,Rootkit control interface
+install-recovery.sh,file,Recovery script persistence hook
+5555,port,Locker bind (blocks ADB reinfection)
+12341,port,Remapped ADB port
+58741,port,Single-instance mutex

@@ -1,0 +1,7 @@
+domain,type,first_seen,source,notes
+thespacemachines.st,c2,2026-02-22,ThreatFox ID 1752406,Encrypted domain slot 0
+okiloveyoupleasedonttouchme.net,c2,2026-02-22,Ghidra decryption,Encrypted domain slot 1
+imsowiwiwiwiwi.com,c2,2026-02-22,Ghidra decryption,Encrypted domain slot 2
+iloveyourweewee.bz,c2,2026-03-16,C2 protocol monitoring,Pushed via 0xFF85 domain persistence command
+ajshgdhjfgasthjydyufasghjfdafsgudgfhjasgfjh.satyr.wtf,scanner_report,2025-11-07,ThreatFox ID 1635927,Table slot 0 (scanner report domain)
+satyr.wtf,scanner_report,2025-11-07,ThreatFox,Parent domain of scanner report subdomain

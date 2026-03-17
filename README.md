@@ -13,4 +13,9 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | Directory | Description |
 |-----------|-------------|
 | [aisuru](aisuru/) | Mirai-derivative DDoS botnet, active since August 2024 |
+| [katana](katana/) | Mirai variant with on-device compiled rootkit, targeting Android TV set-top boxes |
 | [kimwolf](kimwolf/) | Dual-purpose residential proxy and DDoS botnet, 3M+ devices observed |
+
+## Feedback
+
+We welcome corrections, additional IoCs, and other feedback. Reach out to us on Mastodon at [@deepfield@infosec.exchange](https://infosec.exchange/@deepfield/).

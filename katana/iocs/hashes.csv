@@ -1,0 +1,12 @@
+sha256,type,arch,size,description,malwarebazaar
+aaaa89488caf328bea8e56fa95cae69124a561ec97594b686c93cfdd24f13e96,apk,,1102717,com.system.update APK wrapper,not found
+eb875810f18f42781f2958a038713156194842b5b54e9e9f57f782bd3a33b2ab,elf,arm5,132992,Katana bot binary (stripped),not found
+16e3ac66f85aa3dc0f49bd6df44ae29e7512fc7e293f8e2c24bc11dcfa249a78,elf,arm7,246591,Katana bot binary (debug symbols),not found
+cf173c982a341d2b14c6b024807836016a40e22ab0b6596591d98e841c24be62,elf,arm64,860640,Katana bot binary (stripped),not found
+87ec57bd8e639d5f96a17dfb73af5cc63cc528f45d4a3231e70f287e9ad38601,elf,x86_32,135940,Katana bot binary,not found
+6cc3fc0284dfe57881f5ea01dcd3cecb6c667dc8d1147b049c3d6bd661d9c906,elf,x86_64,124680,Katana bot binary,not found
+121f7a1da6b5d74209a64dfaa42f56d5ce7c52181f49fb256f8bdbdf7c00222f,elf,arm7,66344,Rootkit compiler (rkcompiler),not found
+8c9ff5d82f986b9c86ff8d1a26f83a9c41e50a5f0671e2b79e13c663afb1ba20,elf,arm5,38772,Rootkit loader (rkloader_arm5),not found
+b24c9255bf3c8dc65f35d61544e1959354b74c46d4e1c99462f2f4292ee62cda,elf,arm7,61988,Rootkit loader (rkloader_arm7),not found
+2ab6cb64f05f18b482ace03e7f41617f28bfdb8e54da7070bc183a661f104e56,elf,arm5,221664,TinyCC compiler (tcc_arm5),not found
+809d433de87e5435b185ea908ea244cc5a070cbad23bc11c53dd214528d9bbce,elf,arm7,252784,TinyCC compiler (tcc_arm7),not found

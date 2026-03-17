@@ -1,0 +1,4 @@
+key_hex,purpose,notes
+31,table_encryption,Single-byte XOR key for string table obfuscation
+4a7e92b3c5d8e1f42c5f81a4b7caddee,domain_encryption,16-byte XOR key for 5-step domain cipher (assembled from 4 .rodata segments)
+5F1A1CBA,apk_cert_serial,APK signing certificate serial number
