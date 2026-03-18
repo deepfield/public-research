@@ -2,7 +2,7 @@
 
 **Nokia Deepfield Emergency Response Team (ERT)**
 
-**First published: 2026-03-17** (last updated: 2026-03-17)
+**First published: 2026-03-17** (last updated: 2026-03-18)
 
 > **Content warning:** This report quotes malware artifacts verbatim, including domain names, C2 strings, and build paths chosen by the threat actors. Some contain crude or offensive language. These are reproduced exactly as found in samples to enable accurate detection and attribution.
 
@@ -477,9 +477,31 @@ Sends Discord WebSocket gateway payloads.
 
 ## HTTP attack
 
-The `attack_http` function (ID 10) implements a layer-7 HTTP flood with:
+The `attack_http` function (ID 10) implements a layer-7 HTTP flood using raw TCP sockets (`socket` → `connect` → `send`) with no TLS library. The binary contains no OpenSSL, mbedTLS, WolfSSL, or any other TLS implementation — confirmed across all three decompiled binaries (arm7, rkcompiler, rkloader). **No JA3/JA4 fingerprint exists** because no TLS handshake is ever performed.
 
-- 4 randomized Chrome 144 user-agent strings (Windows, macOS, Linux, Android)
+When the operator specifies an `https://` target, the bot sets the destination port to 443 but sends plaintext HTTP/1.1 into the TLS-expecting listener. Most servers will reject or ignore these connections since no TLS handshake occurs.
+
+The request template:
+
+```
+{METHOD} {PATH} HTTP/1.1\r\n
+Host: {host}\r\n
+User-Agent: {random}\r\n
+Connection: keep-alive\r\n
+Accept: */*\r\n
+\r\n
+```
+
+User-Agent pool (4 strings, randomly selected per connection slot):
+
+| User-Agent | Platform |
+|------------|----------|
+| `Mozilla/5.0 ... Chrome/144.0.7559.111 Safari/537.36` | Windows 10 x64 |
+| `Mozilla/5.0 ... Chrome/144.0.7559.111 Safari/537.36` | macOS 10.15.7 |
+| `Mozilla/5.0 ... Chrome/144.0.7559.109 Safari/537.36` | Linux x86_64 |
+| `Mozilla/5.0 ... Chrome/144.0.7559.110 Mobile Safari/537.36` | Android 10 |
+
+Up to 500 concurrent connection slots per attack. Additional features:
 
 - Cookie preservation and redirect following (`Location:` and `Refresh:` headers)
 
@@ -803,3 +825,10 @@ Machine-readable IOC files are in [`iocs/`](iocs/):
 | [`domains.csv`](iocs/domains.csv) | C2 domains and scanner report domains |
 | [`ips.csv`](iocs/ips.csv) | C2 IPs, staging servers, fallback infrastructure |
 | [`keys.csv`](iocs/keys.csv) | Cryptographic keys and APK certificate indicators |
+
+## Edit history
+
+| Date | Change |
+|------|--------|
+| 2026-03-17 | Initial public release |
+| 2026-03-18 | Added HTTP flood details: no TLS stack, no JA3/JA4 fingerprint, UA pool |
