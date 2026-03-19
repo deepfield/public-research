@@ -16,6 +16,14 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | [katana](katana/) | Mirai variant with on-device compiled rootkit, targeting Android TV set-top boxes |
 | [kimwolf](kimwolf/) | Dual-purpose residential proxy and DDoS botnet, 3M+ devices observed |
 
+## Reports
+
+Standalone analyses that don't map to a single botnet family.
+
+| Report | Description |
+|--------|-------------|
+| [Pray4Bandwidth](reports/2026-03-19-xiongmai-packetsdk-ipidea.md) | Xiongmai DVR campaign deploying IPRoyal Pawns and IPIDEA PacketSDK via Mirai-derived downloader |
+
 ## Feedback
 
 We welcome corrections, additional IoCs, and other feedback. Reach out to us on Mastodon at [@deepfield@infosec.exchange](https://infosec.exchange/@deepfield/).
