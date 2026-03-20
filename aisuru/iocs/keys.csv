@@ -1,6 +1,7 @@
 key,purpose,notes
 DEADBEEF CAFEBABE 12345678 90ABCDEF,table_encryption,Gen1 16-byte crypto key
-CAFEBABE,dns_txt_xor,4-byte XOR key for DNS TXT IP decoding; Gen1 DNS TXT era through Gen2 (except latest)
+CAFEBABE,dns_txt_xor,4-byte XOR key for DNS TXT IP decoding; all generations except latest
 1CEB00DA,c2_protocol_magic,Gen2 latest (7500925a); replaces CAFEBABE handshake
-PJbiNbbeasddDfsc,table_xor,Gen2 16-byte table XOR key
+PJbiNbbeasddDfsc,table_xor,Gen2 16-byte table XOR key; shared with Jackskid
 DEADBEEF 13370420,c2_handshake,Gen1 earliest (39682d9b) handshake magic
+37867|37868|18923|27136|29517|31984|36942|24105|41237|16283|38690|20974|35811|18247|40319,c2_port_pool,15-port secondary C2 pool from gen2 build 7500925a; identical sequence in MossadProxy RC4 config slot 0x07

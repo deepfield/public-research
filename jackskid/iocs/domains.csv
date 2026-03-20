@@ -1,0 +1,18 @@
+domain,c2_method,first_seen,status,notes
+www.boatdealers.su,doh_rc4,2025-11,active,RC4-encrypted config slot 1; 53 A records; checked 2026-03-10
+ida.boatdealers.su,doh_rc4,2025-11,inactive,RC4-encrypted config slot 6; no A/AAAA records; checked 2026-03-10
+www.gokart.su,doh_rc4,2025-11,active,RC4-encrypted config slot 2; 54 A records; checked 2026-03-10
+mail.gokart.su,doh_rc4,2025-11,inactive,RC4-encrypted config slot 7; no A/AAAA records; checked 2026-03-10
+nineeleven.gokart.su,doh_rc4,2025-11,inactive,RC4-encrypted config slot 4; no A/AAAA records; checked 2026-03-10
+kieranellison.cecilioc2.xyz,doh_rc4,2025-11,active,RC4-encrypted config slot 3; 38 A records; checked 2026-03-10
+www.sendtuna.com,doh_rc4,2025-11,active,RC4-encrypted config slot 5; 26 A records; TXT with dox; checked 2026-03-10
+moo.6yd.ru,doh_rc4,2025-11,active,"RC4-encrypted config slot 8; 2 A records (5.61.209.96, 89.42.231.241); checked 2026-03-10"
+dvrip.6yd.ru,doh_rc4,2025-11,active,RC4-encrypted config slot 9; 1 A record (196.251.100.22); checked 2026-03-10
+log.6yd.ru,doh_rc4,2025-11,active,RC4-encrypted config slot 10; 1 A record (38.60.179.89); checked 2026-03-10
+nodes.ipmoyu.xyz,doh_rc4,2026-03,active,"RC4-encrypted config slot 1 in Mar 11-15 builds; ~50 A records (fast-flux); checked 2026-03-17"
+www.ipmoyu.xyz,doh_rc4,2026-02,active,"RC4-encrypted config slot 1 in Feb 2026 builds; 14 A records including 203.188.174.x; checked 2026-03-17"
+peer.ipmoyu.xyz,doh_rc4,2026-03,active,"RC4-encrypted config slot 1 in Mar 9 builds; ~40 A records (fast-flux); checked 2026-03-17"
+www.plane.cat,doh_rc4,2026-01,active,"RC4-encrypted config slot 4 in Jan 2026 builds; 19 A records; same IP pool as gokart.su/boatdealers.su; checked 2026-03-17"
+ricocaseagainst.rebirth.st,hardcoded_encrypted,2026-03,active,"Encrypted config entry in stripped DDoS-only builds; resolves to 158.94.210.71; Rebirth stresser branding"
+www.jacob-butler.gay,doh_rc4,2026-03,active,"Discovered in fast-flux pool March 18; same IP pool as boatdealers/gokart/ipmoyu"
+www.richylam.org,doh_rc4,2026-03,active,"Discovered in fast-flux pool March 18; matches richylam campaign tag; same IP pool"

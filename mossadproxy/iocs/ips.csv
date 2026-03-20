@@ -1,0 +1,11 @@
+ip,port,asn,org,country,role,first_seen,notes
+45.142.195.101,"80,1337,3128,4443,8080,8082,8083,9090",AS215929,Data Campus Ltd,AM,ADB staging (primary),2026-02,Serves .d stager (8082) installer (8083) APK (4443) .w binary (80/1337/3128/8080/9090); all confirmed active 2026-03-16
+45.142.195.102,"8082,8083",AS215929,Data Campus Ltd,AM,ADB staging (secondary),2026-02,Same payloads as .101 with different build counters
+185.70.186.193,"8082,8083",,HOSTKEY B.V.,NL,ADB staging (inactive),2026-02,Offline at time of check
+176.65.149.25,,,pfcloud.io,,Embedded in binary,,RC4 slot 0x2a; purpose unclear
+138.124.68.102,,,hip-hosting.com,,C2 resolution + embedded,,RC4 slot 0x30; also resolves in whitebluerights.com
+138.124.68.249,,,hip-hosting.com,,C2 resolution,2026-03,Resolves in whitebluerights.com
+166.1.60.151,,,,,C2 resolution,2026-03,Resolves in whitebluerights.com
+194.226.121.51,,,,,C2 resolution,2026-03,Resolves in whitebluerights.com
+45.148.125.131,,,,,C2 resolution,2026-03,Resolves in whitebluerights.com
+46.20.106.11,,,,,C2 resolution,2026-03,Resolves in whitebluerights.com

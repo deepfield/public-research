@@ -1,13 +1,16 @@
 domain,c2_method,first_seen,status,notes
-ministry.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-11
-lane.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-11
-coerece.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-11
-approach.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-11
-dvrxpert.tiananmensquare1989.su,dns_txt,2025-06,active,"10 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
-stevenfromcoinbase.fk3.su,dns_txt,2025-10,active,"2 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
-dvrexpert.st,dns_txt,2025-11,active,"3 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
-public.dvrexpert.st,dns_txt,2025-11,active,"3 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
-ohbro.krebstresser.st,dns_txt,2025-11,active,"3 TXT records; CAFEBABE-XOR encoded C2 IPs; checked 2026-03-11"
-dvrsupport.st,dns_txt,2025-11,inactive,No TXT data observed; checked 2026-03-11
-printerconsulting.ru,dns_a,2024-08,inactive,Pre-DNS-TXT era; no A/TXT; checked 2026-03-11
-foxnointel.ru,dns_a,2024-08,inactive,Pre-DNS-TXT era; no A/TXT; checked 2026-03-11
+ministry.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-10
+lane.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-10
+coerece.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-10
+approach.ilovegaysex.su,dns_txt,2024-10,inactive,CAFEBABE XOR resolver; no A/TXT; checked 2026-03-10
+dvrxpert.tiananmensquare1989.su,dns_txt,2025-06,active,"10 TXT records; registered 2025-06-02 via deSEC; TXT: ""5Jvknw=="" (CAFEBABE-XOR encoded C2 IP); checked 2026-03-16"
+stevenfromcoinbase.fk3.su,dns_txt,2025-10,active,"2 TXT records; AlexHost Moldova; TXT: ""BEPTDQ=="" (CAFEBABE-XOR encoded C2 IP); checked 2026-03-16"
+dvrexpert.st,dns_txt,2025-11,inactive,no TXT records as of 2026-03-16
+public.dvrexpert.st,dns_txt,2025-11,inactive,no TXT records as of 2026-03-16
+ohbro.krebstresser.st,dns_txt,2025-11,inactive,no TXT records as of 2026-03-16
+dvrsupport.st,dns_txt,2025-11,inactive,Registered 2025-11-01; no TXT data observed; no A/TXT; checked 2026-03-10
+printerconsulting.ru,dns_a,2024-08,inactive,Pre-DNS-TXT era; now dead; no A/TXT; checked 2026-03-10
+foxnointel.ru,dns_a,2024-08,inactive,Pre-DNS-TXT era; now dead; no A/TXT; checked 2026-03-10
+xorisapedophile.st,dns_txt,2026-03,active,1 TXT record; AS209978 (FR); checked 2026-03-19
+motherfuckingwebsite.com,connectivity_check,2024-10,active,Gen1 connectivity check; legitimate third-party site (not an IoC)
+stun.l.google.com,connectivity_check,2026-03,active,Gen2 connectivity check (replaced motherfuckingwebsite.com); STUN protocol

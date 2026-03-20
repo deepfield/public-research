@@ -1,0 +1,12 @@
+domain,c2_method,first_seen,status,notes
+oceanic-node.su,dns_txt,2026-02,active,Public DNS C2; Feb 2026 build; A:1 + TXT with encoded C2 data; checked 2026-03-10
+eth0.oceanic-node.su,dns_txt,2026-02,active,Subdomain variant; TXT with encoded C2 data (no A record); checked 2026-03-10
+kamru.su,dns_txt,2025-05,active,Public DNS C2; May 2025 build; TXT with encoded C2 data (no A record); checked 2026-03-10
+f93.oss,opennic,2026-02,inactive,OpenNIC .oss TLD; Feb 2026 build; NXDOMAIN via OpenNIC (dnsparty.org) 2026-03-10
+g86.oss,opennic,2026-02,inactive,OpenNIC .oss TLD; Feb 2026 build; NXDOMAIN via OpenNIC (dnsparty.org) 2026-03-10
+fm3.dyn,opennic,2026-02,inactive,OpenNIC .dyn TLD; Feb 2026 build; NXDOMAIN via OpenNIC (dnsparty.org) 2026-03-10
+ryd.dyn,opennic,2026-02,inactive,OpenNIC .dyn TLD; Feb 2026 build; NXDOMAIN via OpenNIC (dnsparty.org) 2026-03-10
+hailbot.dyn,opennic,2025-05,inactive,OpenNIC .dyn TLD; May 2025 build; Hailbot variant name; NXDOMAIN via OpenNIC (dnsparty.org) 2026-03-10
+tbot.dyn,opennic,2025-05,inactive,OpenNIC .dyn TLD; May 2025 build; NXDOMAIN via OpenNIC (dnsparty.org) 2026-03-10
+cecilio.geek,opennic,2025-05,inactive,OpenNIC .geek TLD; May 2025 build; NXDOMAIN via OpenNIC (dnsparty.org) 2026-03-10
+hitlerbot.geek,opennic,2025-05,inactive,OpenNIC .geek TLD; May 2025 build; NXDOMAIN via OpenNIC (dnsparty.org) 2026-03-10

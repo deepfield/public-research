@@ -1,14 +1,31 @@
 ip,asn,role,first_seen,notes
-165.22.118.249,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
-167.172.50.217,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
-178.62.116.87,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
-167.71.143.164,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
-159.65.85.253,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
-209.97.187.144,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
-178.62.51.66,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
-143.110.175.124,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
-167.71.130.213,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
-206.189.113.35,AS14061,c2_ens_txt,2026-03,"From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15"
+165.22.118.249,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
+167.172.50.217,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
+178.62.116.87,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
+167.71.143.164,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
+159.65.85.253,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
+209.97.187.144,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
+178.62.51.66,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
+143.110.175.124,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
+167.71.130.213,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
+206.189.113.35,AS14061,c2_ens_txt,2026-03,From re6ce.eth (port 29342) and byniggasforniggas.eth (port 25001); DigitalOcean; resolved 2026-03-15
 89.39.70.40,AS9009,dropper,2025-12,"Dropper server; port 8081 (APK), 8082 (ELF); from install script 3a7b5a13"
-95.133.240.218,AS9009,dropper,2026-02,"Newer dropper server; port 1001; from 68ea5dc4 installer"
-130.12.180.126,AS20473,dropper,2025-12,"Dropper server; port 1223; from core bot config slot 49"
+95.133.240.218,AS9009,dropper,2026-02,Newer dropper server; port 1001; from 68ea5dc4 installer
+130.12.180.126,AS20473,dropper,2025-12,Dropper server; port 1223; from core bot config slot 49
+206.189.111.119,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+167.99.219.230,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+157.245.76.251,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+164.92.152.141,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+167.172.32.113,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+188.166.100.18,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+167.172.45.217,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+178.62.244.142,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+188.166.35.43,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+209.38.37.114,AS14061,c2_ens,2026-02,unknown; From byniggasforniggas.eth
+89.125.255.206,,dropper,2026-01,netcat download; offline as of 2026-03-16
+87.120.167.80,AS199524,dropper,2025-12,down; Payload delivery; offline as of 2026-03-16
+172.232.50.12,,dropper,2026-01,unknown; Dropper script staging
+85.234.91.247,AS59437,c2_go,2026-03,unknown; Go variant QUIC/HTTP3 C2; WebSocket
+213.193.253.1,AS204044,dropper,2025-12,"down; C2 :1024, rolf binary :1026, app.apk :4200; source: Synthient; offline as of 2026-03-16"
+89.39.70.110,AS199524,dropper,2025-12,Post-install script download; same /24 as 89.39.70.40; source: Synthient; offline as of 2026-03-16
+93.95.112.53,AS397923,dropper,2025-12,down; Multi-port dropper + C2; source: Synthient; offline as of 2026-03-16

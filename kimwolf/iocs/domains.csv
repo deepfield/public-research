@@ -1,10 +1,10 @@
 domain,c2_method,first_seen,status,notes
 pawsatyou.eth,ens_txt,2025-12,inactive,"ENS text keys: candy (99443ec9, fa97449d), lol (7179a36d, 9e9b8561); both records empty as of 2026-03-15"
-re6ce.eth,ens_txt,2026-01,active,"ENS text key: pktstrm; two-step deobfuscation (subtract 0x1b39 then XOR 0x64dc7972)"
-byniggasforniggas.eth,ens_txt,2026-02,active,"ENS text key: n2; same deobfuscation as re6ce.eth; owner wallet 0xe206cc61f9ed9312205cda4d0bae26f98dab3397; 10 C2 IPs resolved 2026-03-15"
-14emeliaterracewestroxburyma02132.su,dns_a,2025-10,active,"Primary C2/beacon; 8 Leaseweb A records; ranked in Cloudflare Top 100 by traffic volume; checked 2026-03-15"
-hahakrebsisacrybaby.su,dns_a,2025-10,active,"C2/signaling; same 8 Leaseweb A records as 14emeliate...; targeted harassment of Brian Krebs; checked 2026-03-15"
-[REDACTED-PII].su,dns_a,2025-10,inactive,"C2/doxing; domain encodes a physical address and SSN; redacted to avoid amplifying PII; no A records; checked 2026-03-15"
-a.6mv1eyr328y6due83u3js6whtzuxfyhw.ru,dns_a,2025-06,inactive,"High-entropy fallback C2 domain; no A records; checked 2026-03-15"
-new-endpoints.byteconnect.io,http,2025-12,active,ByteConnect SDK C2 endpoint (port 80)
-rwbxbmflwm7andgmxeo3my7mqqs6najhou7o6f7xnxjsiuirzcnab4yd.onion,tor,2026-02,dormant,"Tor hidden service fallback; descriptor exists but not accepting connections as of 2026-03-07"
+re6ce.eth,ens_txt,2026-01,active,ENS text key: pktstrm; ENS text['pktstrm'] = 10 obfuscated IPv6 C2 addrs on port 29342; checked 2026-03-10
+byniggasforniggas.eth,ens_txt,2026-02,active,ENS text key: n2; owner 0xe206cc61f9ed9312205cda4d0bae26f98dab3397; ENS text['n2'] = 10 obfuscated IPv6 C2 addrs on port 25001; checked 2026-03-10
+14emeliaterracewestroxburyma02132.su,dns_a,2025-10,active,Primary C2/beacon; 8 Leaseweb A records; ranked in Cloudflare Top 100 by traffic volume; checked 2026-03-15
+hahakrebsisacrybaby.su,dns_a,2025-10,active,C2/signaling; same 8 Leaseweb A records as 14emeliate...; targeted harassment of Brian Krebs; checked 2026-03-15
+[REDACTED-PII].su,dns_a,2025-10,inactive,C2/doxing; domain encodes a physical address and SSN; redacted to avoid amplifying PII; no A records; checked 2026-03-15
+a.6mv1eyr328y6due83u3js6whtzuxfyhw.ru,dns_a,2025-06,inactive,High-entropy fallback C2 domain; no A records; checked 2026-03-15
+new-endpoints.byteconnect.io,http,2025-12,active,ByteConnect SDK registration domain; source: Synthient; legitimate ByteConnect domain
+rwbxbmflwm7andgmxeo3my7mqqs6najhou7o6f7xnxjsiuirzcnab4yd.onion,tor,2026-02,inactive,Tor hidden service fallback; descriptor exists but not accepting connections as of 2026-03-07

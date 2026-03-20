@@ -1,0 +1,9 @@
+sha256,type,arch,size,description,malwarebazaar
+f7b381b9afd31c3aa518668ce50e73988a15150b3ee7bc48e12106942df2738c,elf,armeabi-v7a,83580,libproxy.so / .w DDoS bot binary,not found
+e8e7e5a642c5526a2e2e8d8202fd2171e61b743c321f78aa70c21783b905c1c6,elf,arm64-v8a,73816,libproxy.so DDoS bot binary (64-bit variant),not found
+c02cee5216d15af52e63b3c4bf4d1353ba760b0301d3cf456a08f287943ac534,apk,,101813,com.android.door APK wrapper (v2.4.9 versionCode 74 — older build),not found
+78fb05a1970c5ca05c95a25ed769d4197c627fb4cd5448de7d84fb248e80296f,apk,,101808,com.android.door APK wrapper (v2.4.9 versionCode 77),not found
+d5c6a196a16100e645c0b2d7938025419bd670138dfa02e06da9cd1a20acc60e,elf,arm,676,.d stage-1 stager from 45.142.195.101:8082,not found
+cf083b9cc2bf0fadd945df7bb0736cdc38475170e34166e31d21df0049aa7416,elf,arm,1912,APK installer from 45.142.195.101:8083,not found
+edebf1271f40e36efc0ca237611ceb2b071e8eed1a46344912abe78936f5b2c3,elf,arm,676,.d stage-1 stager from 45.142.195.102:8082,not found
+9aa6615bd324eea03f429b9784d67d006f0011fe46d88bf9908798e1552382eb,elf,arm,1912,APK installer from 45.142.195.102:8083,not found

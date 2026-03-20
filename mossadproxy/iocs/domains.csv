@@ -1,0 +1,5 @@
+domain,type,first_seen,source,notes
+whitebluerights.com,c2,2026-01-20,RC4 slot 0x02,Primary C2; registered REG.RU
+blueblackside.store,c2,2025-09-28,RC4 slot 0x31,Fallback/migration C2; registered REG.RU; no A record as of 2026-03-19
+blueblackside.com,c2,2026-03,dns_a resolution,Active C2; resolves to same IPs as whitebluerights.com; checked 2026-03-19
+stun.kamru.ru,stun,,RC4 slot 0x03,STUN server for NAT traversal; shares kamru prefix with Cecilio C2 kamru.su

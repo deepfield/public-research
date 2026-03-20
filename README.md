@@ -13,16 +13,20 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | Directory | Description |
 |-----------|-------------|
 | [aisuru](aisuru/) | Mirai-derivative DDoS botnet, active since August 2024 |
+| [cecilio](cecilio/) | CatDDoS derivative with modified RC4 cipher, OpenNIC C2 |
+| [jackskid](jackskid/) | Mirai variant sharing code lineage with Aisuru, DoH C2 via mbedTLS |
 | [katana](katana/) | Mirai variant with on-device compiled rootkit, targeting Android TV set-top boxes |
 | [kimwolf](kimwolf/) | Dual-purpose residential proxy and DDoS botnet, 3M+ devices observed |
+| [mossadproxy](mossadproxy/) | Android TV/IoT DDoS botnet via ADB, operationally linked to ecosystem |
 
 ## Reports
 
 Standalone analyses that don't map to a single botnet family.
 
-| Report | Description |
-|--------|-------------|
-| [Pray4Bandwidth](reports/2026-03-19-xiongmai-packetsdk-ipidea.md) | Xiongmai DVR campaign deploying IPRoyal Pawns and IPIDEA PacketSDK via Mirai-derived downloader |
+| Date | Report | Description |
+|------|--------|-------------|
+| 2026-03-19 | [Pray4Bandwidth](reports/2026-03-19-xiongmai-packetsdk-ipidea.md) | Xiongmai DVR campaign deploying IPRoyal Pawns and IPIDEA PacketSDK via Mirai-derived downloader |
+| 2026-03-20 | [Aisuru ecosystem](reports/2026-03-20-aisuru-ecosystem.md) | Four DDoS botnets traced to one ecosystem via shared code, crypto, and infrastructure |
 
 ## Feedback
 

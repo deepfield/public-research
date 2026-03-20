@@ -1,0 +1,6 @@
+key_hex,purpose,notes
+6e7976666525a97639777d2d7f303177,rc4_config_encryption,16-byte RC4 key for config string encryption/decryption
+4f1aec058111eb64ed01eb606d2d17af0a742cfa14cf0044db72c80ce896b744,chacha20_key_or_bot_id,256-bit key embedded in RC4 slot 0x23
+0f4747e4527594837ff783a1cd141b12c9065a0bee95881b688ac254e7e94812,secondary_key,256-bit key embedded in RC4 slot 0x24
+7b369e8cba03554a,apk_cert_serial,APK signing certificate serial number (CN=Android Debug)
+37867|37868|18923|27136|29517|31984|36942|24105|41237|16283|38690|20974|35811|18247|40319,c2_port_pool,15-port secondary C2 pool from RC4 config slot 0x07; identical sequence in Aisuru gen2 build 7500925a

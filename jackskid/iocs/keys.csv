@@ -1,0 +1,8 @@
+key_hex,purpose,notes
+DEADBEEF CAFEBABE E0A4CBD6 BADC0DE5,rc4_key,16-byte RC4 key for encrypted domain config
+FrshPckBnnnSplit,packet_framing,Framing marker in C2 protocol; unique to Jackskid
+PJbiNbbeasddDfsc,table_xor,16-byte table XOR key; shared with Aisuru gen2
+e0a4cbd6,lcg_seed,RC4 LCG 5-pass S-box scramble seed; shared with Aisuru gen2
+41c64e6d / 3039,lcg_constants,Multiplier / addend; matches glibc rand() TYPE_0
+D800A4,lfsr_polynomial,32-bit Galois LFSR polynomial in PRGA keystream generation
+jilcore.6.so|jipplib.1.so|jibdata.2.so|jiblib.5.so,bot_self_id,Bot self-identification strings in /proc/*/maps (richy/c654028d build)

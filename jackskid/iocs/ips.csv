@@ -1,0 +1,28 @@
+ip,port,role,hosting,first_seen,status,notes
+158.94.210.88,60-pool,c2,,2025-12,unknown,"Debug build 214d25ce + crossover 3d0cf1d0; port pool: 2345,2871,3194,3650,4128,4599,5032,5476,6120,6584,7021,7489,8015,8560,9027,9488,10034,10579,11112,11648,12103,12755,13290,13844,14301,14986,15420,16075,16618,17142,17690,18233,18805,19344,19987,20761,21408,22195,22934,23670,24411,25198,25903,26647,27489,28310,29176,30054,30988,31840,32795,33721,34680,35614,36602,37745,38901,40127,43862,49215"
+130.12.180.126,1223,c2,,2026-02,unknown,Config slot in sample 38e49e9f
+5.187.35.167,"2450,3924,1004",delivery,AS211252 Amarutu Technology NL,2026-03,active,Stager (komaru) + binary (richy) + APK (me.apk) distribution
+5.187.35.166,"2450,443,8473,48384,1003,3923",delivery,AS211252 Amarutu Technology NL,2026-02,active,Stager (komugi) distribution; same script as .167
+5.187.35.133,"3924,1004",delivery,AS211252 Amarutu Technology NL,2026-03,active,"New richy binary (da78425a) + updated com.google.alarm APK (ee575de5) distribution; also serves stager scripts"
+185.16.39.146,456,c2,AS201814 MEVSPACE PL,2026-03,active,Reverse shell C2 for ADB attack vector
+87.121.84.74,13121,delivery,AS215925 Vpsvault.host US,2026-03,active,com.system.update APK distribution; shared with RondoDox and com.system.update campaigns
+185.196.41.180,,c2,"AS400992/AS50053 VDSKA-NL, Individual Entrepreneur Anton Levin (GE)",2026-03,active,"Primary C2 for Mar 2026 wave (23 samples); Aisuru↔Jackskid crossover builds; also seen in Aisuru 7500925a"
+158.94.210.71,,c2,,2026-03,active,"C2 for stripped DDoS-only builds (5 samples); = ricocaseagainst.rebirth.st; same /24 as 158.94.210.88"
+5.187.35.158,"1337,443,8473,8090,2441,2448,15,18",delivery,AS211252 Amarutu Technology NL,2026-01,active,"Original Jan 2026 downloader; serves ELF + APK + stager scripts"
+192.206.117.19,"443,2222,8081,8082,8443",delivery,,2026-02,active,"Feb 2026 downloader; serves ELF + bootsync APK + stager scripts; SELinux bypass"
+160.22.79.29,"443,6767,8443",delivery,,2026-02,active,"Feb 2026 downloader; cross-IP with 192.206.117.19; serves APK + ELF"
+103.77.175.243,"34567,21874,15392,3925",delivery,,2026-03,active,"Mar 2026 downloader; wireshark-captured payload; serves ELF"
+147.182.169.126,"443,3389,8443",delivery,,2026-02,active,"Feb 2026 downloader; drops richy (kieran) + APK"
+157.230.52.185,"11111,33811",delivery,,2026-03,active,"Mar 2026 downloader; serves APK + stager script"
+192.241.128.57,"443,8443",delivery,,2026-03,active,"Mar 2026 downloader; serves stager + APK"
+203.188.174.195,"3923,9248,48384",delivery,,2026-02,active,"Feb-Mar 2026 downloader; serves ELF + APK + stager; overlaps with www.ipmoyu.xyz resolution"
+203.188.174.236,48384,delivery,,2026-03,active,"Mar 2026 downloader; same stager script as .195"
+203.188.174.237,48384,delivery,,2026-03,active,"Mar 2026 downloader; same stager script as .195"
+203.188.174.238,48384,delivery,,2026-03,active,"Mar 2026 downloader; com.google.android.env.update stager"
+203.188.174.239,48384,delivery,,2026-03,active,"Mar 2026 downloader; same as .238"
+203.188.174.240,48384,delivery,,2026-03,active,"Mar 2026 downloader; same as .238"
+203.188.174.241,48384,delivery,,2026-03,active,"Mar 2026 downloader; same as .238"
+203.188.174.242,48384,delivery,,2026-03,active,"Mar 2026 downloader; same as .238"
+206.81.9.186,"3923,3924,11111,33811",delivery,,2026-03,active,"Mar 2026 downloader; drops richy (litecoin) + com.google.play APK; removes jewboot"
+141.98.11.123,21874,delivery,,2026-03,active,"Mar 2026 downloader; latest richy (a06aac); C2: nodes.ipmoyu.xyz"
+5.61.209.96,15392,delivery,AS206264 Amarutu Technology NL,2026-03-18,down,"C2 IP (moo.6yd.ru) reused as ADB binary dropper; binary saved as 's'; chmod 777; su 0 ./s; timeout 2026-03-18"

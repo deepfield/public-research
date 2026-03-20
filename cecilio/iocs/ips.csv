@@ -1,0 +1,5 @@
+ip,port,role,hosting,first_seen,status,notes
+185.242.3.251,C2,c2,Felcloud (US),2026-02,unknown,Serves oceanic-node.su + OpenNIC domains
+64.89.161.164,C2,c2,Netiface America (GB),2026-02,unknown,Serves oceanic-node.su + OpenNIC domains
+195.206.234.7,C2,c2,DeluxHost (NL),2025-05,unknown,Serves kamru.su
+45.81.254.185,C2,c2,rfox.cloud (NL),2025-05,unknown,"Serves tbot.dyn, cecilio.geek, hitlerbot.geek"

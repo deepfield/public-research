@@ -1,14 +1,5 @@
-key,purpose,notes
-PJbiNbbeasddDfsc,rc4_config_encryption,"Custom RC4 with modified KSA; decrypts config table containing C2 domains and parameters"
-0x490d16a1,ip_xor,"Single-step IP deobfuscation; used by 99443ec9, fa97449d (pawsatyou.eth key candy)"
-0x93141715,ip_xor_bswap,"IP XOR after byte-swap; used by 7179a36d (pawsatyou.eth key lol); equivalent to 0x15171493 on AArch64"
-0x15171493,ip_xor,"IP XOR (AArch64 byte order); used by 9e9b8561; resolves same IP as 0x93141715"
-0x64dc7972,ip_xor_after_subtract,"Two-step: subtract 0x1b39 then XOR; used by 5b2475d4 (re6ce.eth), 68ea5dc4/951c9480 (byniggasforniggas.eth)"
-0x1b39,ip_subtract,"Subtracted before XOR with 0x64dc7972; 6969 decimal"
-0xae0413,ip_xor_fallback,"Fallback IP XOR for .st domain resolution; used by 72142e7a only"
-0x1337,port_xor,"Port deobfuscation; used by 99443ec9, fa97449d, 5b2475d4"
-0x4c6d21ad,c2_protocol_magic,"C2 binary protocol magic in 18-byte header; all AbcProxy and APK variants"
-candy,ens_text_key,"ENS text record key for pawsatyou.eth; used by 99443ec9, fa97449d"
-lol,ens_text_key,"ENS text record key for pawsatyou.eth; used by 7179a36d, 9e9b8561, 72142e7a"
-pktstrm,ens_text_key,"ENS text record key for re6ce.eth; used by 5b2475d4"
-n2,ens_text_key,"ENS text record key for byniggasforniggas.eth; used by 68ea5dc4, 951c9480"
+key_hex,purpose,notes
+4c6d21ad,c2_handshake,Binary protocol handshake magic
+ae0413,ip_xor,IP deobfuscation XOR for .st domain fallback (72142e7a)
+1b39 / 64dc7972,ipv6_deobfuscation,Subtract 0x1b39 then XOR 0x64dc7972 to decode IPv6-embedded IPv4
+1a3f:7c9b:de42:e8d0:7b2f:4c8d::/96,ipv6_prefix,Static IPv6 prefix for obfuscated C2 IPs

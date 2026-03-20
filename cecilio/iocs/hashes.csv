@@ -1,0 +1,5 @@
+sha256,arch,first_seen,description
+04315269969dd37353592ca248a8801d339355cd0ded5a2b99130c683d6056f7,ARM,2025-05,kamru.su era; ChaCha20 replaced with modified RC4
+00def227563541e149047cdbbf610401cbce51c60cec8d3b4c1d1ef77d6869c2,ARM,2026-02,oceanic-node.su era
+08b2b3e74a0a2b11ddf2bd51ebb460f4e91dca14ad6c53f1ca3ceb71509c855c,ARM,2026-02,Feb 2026 variant
+12144c665553ebe004a5f21d684c82ccfa16b2212387a1bdb61557c36cb6d6d5,MIPS,2026-02,MIPS architecture; Feb 2026

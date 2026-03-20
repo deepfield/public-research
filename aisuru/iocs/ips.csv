@@ -26,3 +26,34 @@ ip,asn,role,first_seen,notes
 166.1.160.38,AS41745,c2_fallback,2024-08,Hardcoded in gen1 binaries
 194.147.35.35,AS41745,c2_fallback,2024-08,Hardcoded in gen1 binaries
 185.196.41.180,AS50053,c2_fallback,2026-03,Port 32392; hardcoded in gen2 latest (7500925a)
+192.81.215.50,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+138.197.81.89,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+139.59.167.36,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+143.110.161.92,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+157.245.112.98,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+144.126.199.24,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+167.172.221.20,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+164.92.219.107,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+165.232.33.94,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+68.183.138.233,AS14061,c2_dns_txt,2026-03,From dvrxpert.tiananmensquare1989.su; rotated 2026-03-19; replaced in DNS TXT
+64.227.93.6,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+68.183.1.7,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+89.106.65.100,AS209978,c2_dns_txt,2026-03,active; From xorisapedophile.st; resolved 2026-03-19
+104.248.52.185,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
+104.248.64.104,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
+104.248.161.211,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+104.248.216.4,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
+137.184.105.220,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
+142.93.134.222,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
+146.190.214.36,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+157.230.180.19,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
+157.245.71.216,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+157.245.234.75,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+159.203.135.187,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
+165.227.54.160,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+165.227.238.106,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+178.128.163.225,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
+178.128.241.188,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
+198.211.100.209,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+206.189.117.106,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; resolved 2026-03-19
+209.97.177.38,AS14061,c2_dns_txt,2026-03,active; From dvrxpert.tiananmensquare1989.su; post-rotation 2026-03-19
