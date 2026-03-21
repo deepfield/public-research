@@ -1,0 +1,2 @@
+sha256,type,arch,size,description,first_seen
+b3c1d5fc273d19556b09f935b9b09b782b113b98a8a010ebcbb5de5bfce77e67,apk,"armeabi-v7a, arm64-v8a",165KB,"com.google.android.update; NDK r25c; R8 obfuscation",2026-03-20

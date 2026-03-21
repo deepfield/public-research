@@ -1,0 +1,4 @@
+domain,type,first_seen,status,notes
+sdkconnecter.com,c2,2026-03-20,active,"Primary C2; port 10213; fast-flux DNS (18 IPs)"
+sdkconnect121.st,c2,2026-03-20,active,"Secondary C2; port 10213; resolves to 91.92.241.12"
+c2kxpjr7cux7fqrfmimsz7rtq527xauw627xrjojimt66nwxqvrqbuyd.onion,c2_tor,2026-03-20,unknown,"Tor fallback; port 80; path /c; libtor.so not in current APK"

@@ -13,6 +13,7 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | Directory | Description |
 |-----------|-------------|
 | [aisuru](aisuru/) | Mirai-derivative DDoS botnet, active since August 2024 |
+| [cecbot](cecbot/) | CECbot: Android TV botnet with HDMI-CEC abuse, successor to Katana |
 | [cecilio](cecilio/) | CatDDoS derivative with modified RC4 cipher, OpenNIC C2 |
 | [jackskid](jackskid/) | Mirai variant sharing code lineage with Aisuru, DoH C2 via mbedTLS |
 | [katana](katana/) | Mirai variant with on-device compiled rootkit, targeting Android TV set-top boxes |

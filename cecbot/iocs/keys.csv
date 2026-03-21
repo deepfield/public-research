@@ -1,0 +1,4 @@
+key_hex,purpose,notes
+ae38cdbfe3a8c4ad37acde46177216659be366d60df7ef12150215258d57b9d3,ed25519_server_pubkey,Hardcoded Ed25519 public key for C2 server identity verification
+73a51ce74b92d83f,string_xor_key,"8-byte XOR key for string encryption in class V (63 entries)"
+9fe8224b5c23c7faed9028b71b544a46e28307c2d1cfc30702dc065a41792e4e,tor_response_key,ChaCha20-Poly1305 key for Tor hidden service domain list decryption

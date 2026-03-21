@@ -1,0 +1,19 @@
+ip,port,type,asn,org,country,first_seen,status,notes
+91.92.241.12,10213,c2,AS202412,Omegatech LTD,NL,2026-03-21,active,Primary C2; shared with Katana C2 (:6969); filters connections from cloud IPs
+148.113.3.62,10213,c2_relay,AS16276,OVH SAS,IN,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+169.40.104.39,10213,c2_relay,AS213465,Rainbow Facilities Inc.,US,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+185.31.200.15,10213,c2_relay,AS56971,AS56971 Cloud,NL,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+185.31.200.52,10213,c2_relay,AS56971,AS56971 Cloud,NL,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+185.31.200.86,10213,c2_relay,AS56971,AS56971 Cloud,NL,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+185.92.182.10,10213,c2_relay,AS56971,AS56971 Cloud,US,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+194.116.217.131,10213,c2_relay,AS56971,AS56971 Cloud,FR,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+31.56.117.35,10213,c2_relay,AS56971,AS56971 Cloud,LV,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+31.57.47.141,10213,c2_relay,AS56971,AS56971 Cloud,US,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+31.57.63.53,10213,c2_relay,AS56971,AS56971 Cloud,US,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+31.57.63.129,10213,c2_relay,AS56971,AS56971 Cloud,US,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+31.58.171.203,10213,c2_relay,AS56971,AS56971 Cloud,FI,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+46.8.68.161,10213,c2_relay,AS56971,AS56971 Cloud,NL,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+51.161.207.186,10213,c2_relay,AS16276,OVH SAS,AU,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+88.151.195.83,10213,c2_relay,AS26383,Baxet Group Inc.,UA,2026-03-21,active,sdkconnecter.com fast-flux round-robin; unresponsive
+88.151.195.128,10213,c2_relay,AS26383,Baxet Group Inc.,UA,2026-03-21,active,sdkconnecter.com fast-flux round-robin
+91.108.248.238,10213,c2_relay,AS215311,Regxa Company for Information Technology Ltd,PL,2026-03-21,active,sdkconnecter.com fast-flux round-robin
