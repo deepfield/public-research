@@ -1,10 +1,14 @@
 # Jackskid
 
-*Last updated: 2026-03-20*
+*Last updated: 2026-03-24*
 
 ## Overview
 
 Jackskid (also reported as "RCtea" by CNCERT) is a Mirai-derivative DDoS botnet sharing a code lineage with Aisuru. It was first publicly documented by [Foresiet](https://foresiet.com/blog/mirai-botnet-jackskid-resurgence-nov-2025-iot-threats/) in November 2025. The family uses a custom RC4 cipher with LCG post-processing (seed `0xe0a4cbd6`), the same modification found in Aisuru gen2, establishing a shared development lineage.
+
+## Report
+
+The full technical report is available at [`report.md`](report.md). It covers reverse engineering of 80+ samples across 13 build generations, config decryption, DDoS handler analysis, C2 infrastructure tracking, and the post-disruption ENS pivot following the [March 19 law enforcement action](https://www.justice.gov/usao-ak/pr/authorities-disrupt-worlds-largest-iot-ddos-botnets-responsible-record-breaking-attacks).
 
 ## Prior research
 

@@ -6,7 +6,7 @@ ip,port,role,hosting,first_seen,status,notes
 5.187.35.133,"3924,1004",delivery,AS211252 Amarutu Technology NL,2026-03,active,"New richy binary (da78425a) + updated com.google.alarm APK (ee575de5) distribution; also serves stager scripts"
 185.16.39.146,456,c2,AS201814 MEVSPACE PL,2026-03,active,Reverse shell C2 for ADB attack vector
 87.121.84.74,13121,delivery,AS215925 Vpsvault.host US,2026-03,active,com.system.update APK distribution; shared with RondoDox and com.system.update campaigns
-185.196.41.180,,c2,"AS400992/AS50053 VDSKA-NL, Individual Entrepreneur Anton Levin (GE)",2026-03,active,"Primary C2 for Mar 2026 wave (23 samples); Aisuru↔Jackskid crossover builds; also seen in Aisuru 7500925a"
+185.196.41.180,"24-85 port pool",c2,"AS400992/AS50053 VDSKA-NL, Individual Entrepreneur Anton Levin (GE)",2026-03,active,"Primary C2 for Mar 2026 wave (27+ samples); hardcoded in lite scanner builds + crossover builds; also seen in Aisuru 7500925a; C2 ports down 2026-03-23"
 158.94.210.71,,c2,,2026-03,active,"C2 for stripped DDoS-only builds (5 samples); = ricocaseagainst.rebirth.st; same /24 as 158.94.210.88"
 5.187.35.158,"1337,443,8473,8090,2441,2448,15,18",delivery,AS211252 Amarutu Technology NL,2026-01,active,"Original Jan 2026 downloader; serves ELF + APK + stager scripts"
 192.206.117.19,"443,2222,8081,8082,8443",delivery,,2026-02,active,"Feb 2026 downloader; serves ELF + bootsync APK + stager scripts; SELinux bypass"
@@ -26,3 +26,12 @@ ip,port,role,hosting,first_seen,status,notes
 206.81.9.186,"3923,3924,11111,33811",delivery,,2026-03,active,"Mar 2026 downloader; drops richy (litecoin) + com.google.play APK; removes jewboot"
 141.98.11.123,21874,delivery,,2026-03,active,"Mar 2026 downloader; latest richy (a06aac); C2: nodes.ipmoyu.xyz"
 5.61.209.96,15392,delivery,AS206264 Amarutu Technology NL,2026-03-18,down,"C2 IP (moo.6yd.ru) reused as ADB binary dropper; binary saved as 's'; chmod 777; su 0 ./s; timeout 2026-03-18"
+194.87.198.208,90-port pool,c2,,2026-03-23,active,"ENS C2 (m3rnbvs5d.eth/k1er4n XOR 0xA5); live on :17384; same /24 as nodes.ipmoyu.xyz fast-flux pool"
+194.58.38.79,90-port pool,c2,,2026-03-23,active,"ENS C2 (m3rnbvs5d.eth/k1er4n XOR 0xA5); live on :17384"
+194.58.38.49,90-port pool,c2,,2026-03-23,active,"ENS C2 (m3rnbvs5d.eth/k1er4n XOR 0xA5); live on :17384"
+194.58.38.96,90-port pool,c2,,2026-03-23,active,"ENS C2 (m3rnbvs5d.eth/k1er4n XOR 0xA5); live on :17384"
+194.87.198.104,90-port pool,c2,,2026-03-23,active,"ENS C2 (m3rnbvs5d.eth/k1er4n XOR 0xA5); live on :17384; same /24 as nodes.ipmoyu.xyz fast-flux pool"
+176.65.139.72,"3924,1004,8083",delivery,AS51396 pfcloud.io,2026-03-23,active,"ENS C2 build delivery; ELF (:3924), APK com.google.android.play (:1004), installer (:8083); shared with Cecilio ADB dropper infra"
+77.90.63.58,90-port pool,c2,AS215365 threatoff.eu DE,2026-03-24,active,"DNS C2 (nodes.ipmoyu.xyz); live on :40477; new post-disruption"
+77.90.63.61,90-port pool,c2,AS215365 threatoff.eu DE,2026-03-24,active,"DNS C2 (nodes.ipmoyu.xyz); live on :8320; new post-disruption"
+77.90.63.62,90-port pool,c2,AS215365 threatoff.eu DE,2026-03-24,active,"DNS C2 (nodes.ipmoyu.xyz); live on :40477; new post-disruption"
