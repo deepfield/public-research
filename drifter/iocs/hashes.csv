@@ -1,0 +1,3 @@
+sha256,type,arch,size,description,malwarebazaar
+d22d9a9147b8c5b78a60e0775993ad103b6674d2f8468b5b58fae1b23b1561a3,apk,,2080806,io.nexus.drifter APK (installed as com.siliconworks.android.update),not found
+577a330a1a0b95f01463160419e118ca690b025b24c8ddb71084b65eaaf6f773,elf,armeabi-v7a,73188,libcyn.so native DDoS binary (statically linked),not found
