@@ -1,0 +1,6 @@
+domain,type,first_seen,source,notes
+daylightbomb.elite,c2,2026-03-28,qemu dynamic analysis,"C2 domain; OpenNIC .elite TLD; DGA generates <4-16 random chars>.daylightbomb.elite subdomains; resolved via custom DNS 194.50.5.27; word-swap IP obfuscation"
+hikvision-cctv.su,c2,2026-03-28,qemu strace decode,"C2 domain masquerading as Hikvision CCTV; DGA: <DGA>.hikvision-cctv.su; .su TLD; observed DGA subdomain 2049kl79hbswlpdezz"
+nvms9000.su,c2,2026-03-28,qemu strace decode,"C2 domain masquerading as NVR/NVMS9000; DGA: <DGA>.nvms9000.su; .su TLD; observed DGA subdomain rp7j580i96xj8tl"
+stun.sip.us,stun,2026-03-28,qemu dynamic analysis,STUN server for NAT traversal; resolves to 34.195.177.19; port 3478
+connectivity.accesscam.org,connectivity_check,2026-03-28,qemu dynamic analysis,"Full connectivity check domain (DNS query: connectivity.accesscam.org); resolves to 1.3.3.7"

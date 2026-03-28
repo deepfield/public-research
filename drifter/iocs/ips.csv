@@ -1,0 +1,30 @@
+ip,port,asn,org,country,role,first_seen,notes
+172.105.74.253,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS; active in monitor
+172.232.35.106,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS; active in monitor
+172.232.253.229,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+172.236.172.130,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+172.105.102.102,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+172.105.110.190,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+172.105.118.82,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+172.105.183.161,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+172.233.128.99,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+172.233.20.196,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+172.237.114.235,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+192.46.208.98,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+139.162.132.230,,AS63949,Linode/Akamai,,C2,2026-03-28,DGA wildcard DNS
+172.232.125.148,,AS63949,Linode/Akamai,,C2,2026-03-28,nvms9000.su bare domain resolution
+172.232.214.12,,AS63949,Linode/Akamai,,C2,2026-03-28,nvms9000.su bare domain resolution
+172.238.111.131,,AS63949,Linode/Akamai,,C2,2026-03-28,nvms9000.su bare domain resolution
+104.248.153.229,,AS14061,DigitalOcean,,C2,2026-03-28,DGA wildcard DNS
+104.250.118.52,,AS152900,Onidel,,C2,2026-03-28,DGA wildcard DNS
+159.203.33.101,,AS14061,DigitalOcean,,C2,2026-03-28,DGA wildcard DNS
+165.22.194.93,,AS14061,DigitalOcean,,C2,2026-03-28,DGA wildcard DNS
+165.22.220.235,,AS14061,DigitalOcean,,C2,2026-03-28,DGA wildcard DNS
+5.230.170.237,,AS12586,GHOSTnet,,C2,2026-03-28,DGA wildcard DNS; sequential /28 block (.237-.240)
+5.230.170.238,,AS12586,GHOSTnet,,C2,2026-03-28,DGA wildcard DNS; sequential /28 block
+5.230.170.239,,AS12586,GHOSTnet,,C2,2026-03-28,DGA wildcard DNS; sequential /28 block
+5.230.170.240,,AS12586,GHOSTnet,,C2,2026-03-28,DGA wildcard DNS; sequential /28 block
+194.50.5.27,53,,,,DNS resolver (custom),2026-03-28,OpenNIC resolver for .elite TLD; NOT the system resolver
+34.195.177.19,3478,,AWS,,STUN server,2026-03-28,stun.sip.us; NAT traversal
+188.34.136.251,27016,,Hetzner,,Attack target,2026-03-27,Valve Source Engine game server; UDP flood observed
+54.38.219.151,27016,,OVH,,Attack target,2026-03-28,Valve Source Engine game server; UDP + DNS amp observed
