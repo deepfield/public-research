@@ -19,6 +19,7 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | [jackskid](jackskid/) | Mirai variant sharing code lineage with Aisuru, DoH C2 via mbedTLS |
 | [katana](katana/) | Mirai variant with on-device compiled rootkit, targeting Android TV set-top boxes |
 | [kimwolf](kimwolf/) | Dual-purpose residential proxy and DDoS botnet, 3M+ devices observed |
+| [maskify](maskify/) | Dual-purpose proxy/DDoS botnet with ENS, IPFS, and custom P2P mesh |
 | [mossadproxy](mossadproxy/) | Android TV/IoT DDoS botnet via ADB, operationally linked to ecosystem |
 
 ## Reports

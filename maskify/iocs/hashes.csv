@@ -1,0 +1,4 @@
+sha256,type,filename,description
+5e90ce13e96a3b3fcdde18036ce18c8e1e562ee1dae546c476dda70a11956178,apk,earnify.apk,Maskify v2 loader APK (io.earnify) from maskify.workers.dev
+37bdcdb26c04c38ee4c123fd986dc0f8c0449fc8456fe25dd7f4fd9d0a1c8d7f,elf,libearnify_sdk.so,Maskify v2 SDK v0.1.7 (arm64-v8a) from IPFS
+0dbff535a85bc70a9d55ae20f736acea0d646273a377d1994df7b7a0ce78948b,elf,libearnify_sdk.so,Maskify v2 SDK v0.1.7 (armeabi-v7a) from IPFS

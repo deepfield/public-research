@@ -1,0 +1,3 @@
+ip,role,hosting,description
+84.21.189.244,staging+c2,QWINS (DE),v2 loader :6969 and SDK/C2 :4433
+158.94.208.131,c2,,"v2 C2 :4433 (QUIC) and DDoS template staging :6969 — from ENS announcement"
