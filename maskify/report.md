@@ -4,6 +4,8 @@
 
 **First published: 2026-04-12**
 
+> **Content warning:** This report quotes malware artifacts verbatim, including domain names, ENS records, and HTTP headers chosen by the threat actors. Some contain crude or offensive language. These are reproduced exactly as found in samples to enable accurate detection and attribution.
+
 ---
 
 ## Summary
