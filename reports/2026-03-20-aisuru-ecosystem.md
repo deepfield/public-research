@@ -224,7 +224,7 @@ Expanding the comparison to all three Mirai-lineage families — Aisuru (12 hand
 | TCP ACK flood | `attacks_ack` | `tcp_ack` | `tcp_ack` (0x04) | All three: spoofed ACK packets |
 | TCP STOMP | `attacks_stomp` | `tcp_stomp` | `tcp_stomp` (0x05) | All three: two-socket handshake then burst |
 | UDP volumetric | `attacks_std` | `udp_cidr` | `udp_plain` (0x00) | Aisuru/Kimwolf: CIDR source randomization |
-| UDP generic | `attacks_udp` | `udp_generic` | `udp_vse` (0x02) | Kimwolf: `[a-z0-9]` payload; Jackskid name misleading |
+| UDP generic | `attacks_udp` | `udp_generic` | `udp_vse` (0x02) | All three use `[a-z0-9]` payload charset; Jackskid name misleading |
 | Valve Source Engine | `attacks_vse` | `udp_vse` | `udp_raknet` (0x07) | All target port 27015; Jackskid name misleading |
 | ICMP flood | `attacks_icmp` | `icmp` | — | Aisuru + Kimwolf only |
 | RakNet ping | `attacks_raknet` | — | `tcp_minecraft` (0x08) | Aisuru + Jackskid; Jackskid label says TCP but handler is UDP |
@@ -244,7 +244,7 @@ The pattern of overlap is asymmetric. Jackskid shares 10 of its 14 attack types 
 
 A forensic detail reinforces the Aisuru→Jackskid lineage: Jackskid's handler names are systematically swapped relative to Aisuru's. Jackskid's `udp_raknet` (0x07) actually sends `TSource Engine Query` payloads (Aisuru's `attacks_vse`), while its `tcp_minecraft` (0x08) actually sends RakNet Unconnected Pings over UDP (Aisuru's `attacks_raknet`). The payloads match; only the labels were transposed. Renaming things is hard; we sympathize.
 
-The implementations are independent between the Mirai-derived lineage (Aisuru/Jackskid) and Kimwolf: different languages (C vs. C++), different buffer management (`calloc(0x5e6, 1)` vs. C++ allocation), different PRNG (libc `rand()` vs. xoshiro256). TCP STOMP in particular is not a standard Mirai attack; all three families implement the same two-socket pattern (raw SYN, SYN-ACK detection via `(flags & 0x12) == 0x12`, then `SOCK_STREAM` burst), although the cross-family code analysis confirms Kimwolf does not share the `calloc(0x5e6, 1)` buffer allocation or the `*buf & 0x4f | 0x40` IP header idiom found in the Mirai-derived families.
+The implementations are independent between the Mirai-derived lineage (Aisuru/Jackskid) and Kimwolf: different languages (C vs. C++), different buffer management (`calloc(0x5e6, 1)` vs. C++ allocation), different PRNG variants (xorshift128 vs. xoshiro256). TCP STOMP in particular is not a standard Mirai attack; all three families implement the same two-socket pattern (raw SYN, SYN-ACK detection via `(flags & 0x12) == 0x12`, then `SOCK_STREAM` burst), although the cross-family code analysis confirms Kimwolf does not share the `calloc(0x5e6, 1)` buffer allocation or the `*buf & 0x4f | 0x40` IP header idiom found in the Mirai-derived families.
 
 MossadProxy's attack code is architecturally separate — an independent Clang/C codebase with its own dispatch protocol — but functionally overlapping. Its 8+ handlers cover UDP volumetric floods (three variants, including `SOCK_RAW` with IP spoofing), TCP SYN and connect floods, and DNS amplification/reflection. Four of these map directly to attack types shared across the Mirai-derived families above. The overlap is in capability, not code.
 
@@ -306,3 +306,7 @@ Full IoC tables (domains, IPs, sample hashes, and cryptographic keys) are publis
 - [Jackskid IoCs](https://github.com/deepfield/public-research/tree/main/jackskid/iocs)
 - [Cecilio IoCs](https://github.com/deepfield/public-research/tree/main/cecilio/iocs)
 - [MossadProxy IoCs](https://github.com/deepfield/public-research/tree/main/mossadproxy/iocs)
+
+## Edit history
+
+- **2026-04-13:** Updated attack code comparison (section "Shared attack DNA") after further investigation of decompiled samples. Two corrections: (1) The `[a-z0-9]` alphanumeric payload charset was attributed only to Kimwolf in the attack type table; Ghidra decompilation of Aisuru (`cb74a54b`, `rand_str_alphabetic`) and Jackskid (`cb0cd116`, `FUN_0804baa0`) shows both families use the same 36-character charset with `% 36` indexing for UDP payload generation. The charset is a shared trait across the ecosystem, not a Kimwolf distinguishing feature. (2) Aisuru's PRNG was described as "libc `rand()`"; decompilation of `rand_next()` in `cb74a54b` shows it is xorshift128, the same PRNG family as Kimwolf's xoshiro256. Both use Marsaglia xorshift variants with different state sizes (32-bit vs. 64-bit) and shift constants, but neither uses libc `rand()`. The shared PRNG family and identical payload charset further reinforce the common development lineage described in the report.
