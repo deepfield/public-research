@@ -2,7 +2,7 @@
 
 **Nokia Deepfield Emergency Response Team (ERT)**
 
-**First published: 2026-03-28**
+**First published: 2026-03-28** | **Last updated: 2026-04-26**
 
 ---
 
@@ -44,11 +44,11 @@ The bot uses three C2 base domains across two TLD families:
 
 | Domain | TLD | Masquerade |
 |--------|-----|------------|
-| `daylightbomb[.]elite` | OpenNIC | — |
+| `daylightbomb[.]elite` | Handshake (HNS) | — |
 | `hikvision-cctv[.]su` | .su | Hikvision IP camera |
 | `nvms9000[.]su` | .su | Hikvision NVMS9000 NVR |
 
-Resolution runs through a custom DNS resolver at `194.50.5[.]27` (located in Australia), bypassing the system resolver entirely. The geographic choice somewhat undermines the "blend with local camera traffic" strategy: DNS queries to an Australian resolver from a hotel lobby in São Paulo are not, strictly speaking, inconspicuous. The `.elite` TLD is an OpenNIC alternative that standard resolvers (1.1.1.1, 8.8.8.8) return NXDOMAIN for, meaning these domains are absent from most passive DNS databases.
+Resolution runs through a custom DNS resolver at `194.50.5[.]27` (located in Australia), bypassing the system resolver entirely. The geographic choice somewhat undermines the "blend with local camera traffic" strategy: DNS queries to an Australian resolver from a hotel lobby in São Paulo are not, strictly speaking, inconspicuous. The `.elite` TLD is a Handshake (HNS) name that standard resolvers (1.1.1.1, 8.8.8.8) return NXDOMAIN for, meaning these domains are absent from most passive DNS databases.
 
 The CCTV brand names are not decorative. Android TV boxes (the cheap, unbranded AOSP devices this botnet targets) are frequently deployed on the same network segments as IP cameras. In a hotel, the lobby TV box and the hallway camera share a VLAN. In a small business, the break room streaming box sits next to the NVR. DNS queries from those subnets to `hikvision-cctv[.]su` or `nvms9000[.]su` blend with legitimate surveillance management traffic. The operator read the room. Or at least the subnet. The connectivity check domain, `connectivity.accesscam[.]org` (resolves to `1.3.3.7`, which tells you everything and nothing), completes the theme.
 
@@ -218,3 +218,9 @@ Machine-readable IoC files are in [`iocs/`](iocs/):
 - [Aisuru ecosystem report](../reports/2026-03-20-aisuru-ecosystem.md) — documents the broader ADB TV box battlefield and the families competing on this attack surface (Nokia Deepfield ERT, March 2026)
 - [CECbot report](../cecbot/report.md) — the most recent family from the same delivery vector, for architectural contrast (Nokia Deepfield ERT, March 2026)
 - Synthient, ["A Broken System Fueling Botnets"](https://synthient.com/blog/a-broken-system-fueling-botnets) (Jan 2026) — Kimwolf infection mechanism via residential proxy ADB exploitation
+
+## Edit history
+
+| Date | Change |
+|------|--------|
+| 2026-04-26 | Corrected `.elite` TLD attribution from OpenNIC to Handshake (HNS). `.elite` is not in the OpenNIC TLD namespace; it is a Handshake name resolved via HNS-compatible resolvers. |

@@ -24,7 +24,7 @@ Related prior work:
 
 - **Lineage:** Independent; Mirai-inspired patterns (port lock, OOM protection, process masquerading) but no shared code
 - **Delivery:** ADB exploitation of uncertified AOSP Android TV devices; APK wrapper (`com.siliconworks.android.update`)
-- **C2 domains:** `daylightbomb[.]elite` (OpenNIC), `hikvision-cctv[.]su`, `nvms9000[.]su` — CCTV brand masquerading
+- **C2 domains:** `daylightbomb[.]elite` (Handshake), `hikvision-cctv[.]su`, `nvms9000[.]su` — CCTV brand masquerading
 - **C2 resolution:** Custom DNS resolver (`194.50.5[.]27`), 16-bit half-swap IP obfuscation in A records, DGA subdomains
 - **C2 fallback:** Telegram dead-drop resolver (`t.me/disconnect`)
 - **C2 hosting:** Linode/Akamai (16), DigitalOcean (4), GHOSTnet (4), Onidel (1) — 25 IPs total

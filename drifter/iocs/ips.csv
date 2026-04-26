@@ -24,5 +24,5 @@ ip,port,asn,org,country,role,first_seen,notes
 5.230.170.238,,AS12586,GHOSTnet,,C2,2026-03-28,DGA wildcard DNS; sequential /28 block
 5.230.170.239,,AS12586,GHOSTnet,,C2,2026-03-28,DGA wildcard DNS; sequential /28 block
 5.230.170.240,,AS12586,GHOSTnet,,C2,2026-03-28,DGA wildcard DNS; sequential /28 block
-194.50.5.27,53,,,,DNS resolver (custom),2026-03-28,OpenNIC resolver for .elite TLD; NOT the system resolver
+194.50.5.27,53,,,,DNS resolver (custom),2026-03-28,Handshake (HNS) resolver for .elite TLD; NOT the system resolver
 34.195.177.19,3478,,AWS,,STUN server,2026-03-28,stun.sip.us; NAT traversal
