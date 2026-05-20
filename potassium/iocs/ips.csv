@@ -1,0 +1,21 @@
+ip,port,role,asn_org,country,first_seen,status,notes
+132.27.176.65,,c2_dns_decoy,United States Department of Defense (INCIRLIK1-NET),US,2026-03-18,decoy,Public A record for potassium.vitacoco...st; word-swap target is the real C2
+132.153.176.65,,c2_dns_decoy,RIPE NCC delegated (RIPE-ERX-132-153-0-0),NL,2026-03-18,decoy,Public A record for potassium.vitacoco...st; word-swap target is the real C2
+132.197.176.65,,c2_dns_decoy,Verizon Business (GTEL),US,2026-03-18,decoy,Public A record for potassium.vitacoco...st; word-swap target is the real C2
+132.198.176.65,,c2_dns_decoy,UVM-NET (AS1351),US,2026-03-18,decoy,Public A record for potassium.vitacoco...st; word-swap target is the real C2
+132.246.176.65,,c2_dns_decoy,CNRC (AS376),CA,2026-03-18,decoy,Public A record for potassium.vitacoco...st; word-swap target is the real C2
+176.65.132.27,,c2_real,unspecified,,2026-03-18,unconfirmed,Word-swap of 132.27.176.65; vitacoco campaign; not observed alive in recent probes
+176.65.132.153,,c2_real,unspecified,,2026-03-18,unconfirmed,Word-swap of 132.153.176.65; vitacoco campaign
+176.65.132.197,,c2_real,unspecified,,2026-03-18,unconfirmed,Word-swap of 132.197.176.65; vitacoco campaign
+176.65.132.198,,c2_real,unspecified,,2026-03-18,unconfirmed,Word-swap of 132.198.176.65; vitacoco campaign
+176.65.132.246,,c2_real,unspecified,,2026-03-18,unconfirmed,Word-swap of 132.246.176.65; vitacoco campaign
+34.245.45.153,,c2_dns_decoy,Amazon AWS eu-west-1 (AS16509),IE,2026-04-24,decoy,Public A record for ikheb...st; word-swap target is the real C2
+45.153.34.245,,c2_real,unspecified,,2026-04-24,intermittent,Word-swap of 34.245.45.153; iambig campaign; reachable from our infrastructure during May 2026
+87.243.45.156,,c2_dns_decoy,Kar-Tel LLC / 2Day Telecom Semey (AS21299),KZ,2026-05-18,decoy,Public A record for musika.botlesscucks.st; word-swap target is the real C2
+45.156.87.243,,c2_real,Pfcloud / VMHeaven (AS51396),NL,2026-05-18,active,Word-swap of 87.243.45.156; botlesscucks campaign; all 11 ports of the post-2026-05-01 rotation pool listening
+169.40.135.213,47000,staging_http,unspecified (AS209274),GB,2026-03-18,down,Served /mypantsarefullofshit/arm7 (vitacoco campaign)
+169.40.135.69,80,staging_http,unspecified (AS209274),GB,2026-03-17,down,Served /1000mgofpotassiumaday/arm7 (vitacoco campaign)
+92.38.186.44,6996,staging_http,unspecified,,2026-04-24,down,Served /iambigbigbigbigguy/arm7 (iambig campaign)
+92.38.186.44,25565,staging_nc,unspecified,,2026-04-24,down,Raw TCP fallback for binary delivery (iambig campaign)
+45.153.34.26,80,staging_http,unspecified,,2026-04-22,active,Served /havanagila123/{arm,arm7,mips,x86} (havanagila campaign); arm7 last rebuilt 2026-05-10 (cd8420b5...)
+117.55.203.189,80,staging_http,unspecified,,2026-05-18,observed,Served /jewishgoldowner/arm7 (botlesscucks campaign)

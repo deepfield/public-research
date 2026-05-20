@@ -1,0 +1,12 @@
+domain,role,first_seen,status,notes
+vitacocoyougolocobecauseyouaresodamndeliciocobarampam.st,c2_parent,2026-02-12,active,"Registered via Istanco; NS: ns1/ns2.istanco.com; .st TLD; first observed potassium campaign root"
+potassium.vitacocoyougolocobecauseyouaresodamndeliciocobarampam.st,c2_table_entry_0,2026-03-18,active,"Public DNS resolves to multiple decoy IPs; real C2s recovered via 16-bit halves swap; vitacoco campaign"
+potassium1.vitacocoyougolocobecauseyouaresodamndeliciocobarampam.st,c2_table_entry_1,2026-03-18,nxdomain,vitacoco campaign fallback slot
+potassium2.vitacocoyougolocobecauseyouaresodamndeliciocobarampam.st,c2_table_entry_2,2026-03-18,nxdomain,vitacoco campaign fallback slot
+ikhebkankerinmijnrechterteelbal.st,c2_table_entry_0,2026-04-24,active,"Dutch C2 root for iambig campaign (translates as 'I have cancer in my right testicle')"
+ohhbabybaybe.ikhebkankerinmijnrechterteelbal.st,c2_table_entry_1,2026-04-24,nxdomain,iambig campaign fallback slot
+ohhbabybaybe69.ikhebkankerinmijnrechterteelbal.st,c2_table_entry_2,2026-04-24,nxdomain,iambig campaign fallback slot
+botlesscucks.st,c2_parent,2026-05-18,active,"Registered via Istanco; NS: ns1/ns2.istanco.com; botlesscucks campaign root"
+musika.botlesscucks.st,c2_table_entry_0,2026-05-18,active,"Public DNS resolves to a decoy IP; real C2 recovered via 16-bit halves swap; botlesscucks campaign"
+stoplooking1.botlesscucks.st,c2_table_entry_1,2026-05-18,nxdomain,botlesscucks campaign fallback slot
+stoplooking2.botlesscucks.st,c2_table_entry_2,2026-05-18,nxdomain,botlesscucks campaign fallback slot

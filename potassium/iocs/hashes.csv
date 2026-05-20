@@ -1,0 +1,8 @@
+sha256,arch,size,first_seen,campaign,notes
+6ef4ce0234770f729b0102c51b7a981b65b4f24af65c9e9a1e19a5d2ce780f01,ARM 32-bit,144968,2026-03-13,vitacoco,Original analyzed sample; statically linked; Aboriginal Linux GCC 4.2.1
+cd29241e82a821c6ad1709096ac825e37171523fad9a10b7ec0c28bd40aafe85,x86,130684,2026-04-07,vitacoco,10-arch rebuild batch representative; same ChaCha20 key and nonce; sibling builds for ppc440 i486 i686 sh4 mipsel arm6 x86_64 arm arm7
+a87aa7995ee9996952edb323d703875812f71d08237756ab44367f10e6197c7e,ARM 32-bit,140316,2026-04-24,iambig,First iambig sample; 94% function-size overlap with vitacoco
+3f13e18e190a7fc4c795d7caa83534d2879376ce43fd1a9120f23e48639cfe85,ARM 32-bit,140256,2026-04-22,havanagila,Havanagila staging build (same C2 root and crypto as iambig)
+6833cb4681ac69281474be2c626df06cd90bb05bec72ae697cf219a6603826c9,ARM 32-bit,137136,2026-05-01,iambig,Iambig rebuild; 3.4 KB code trimmed; same crypto and C2; served via raw nc on port 25565
+cd8420b559e6e58040b16d3ce886ce379699f8e798e906f09880e72b3e249039,ARM 32-bit,144388,2026-05-10,havanagila,Havanagila arm7 rebuild; served from 45.153.34.26/havanagila123/arm7 (replaced 3f13e18e)
+a75a61c16cf465ffd789b7097a5f964dace3fa2e2433cd2a7748b79c85daa4fc,ARM 32-bit,144388,2026-05-18,botlesscucks,Botlesscucks campaign sample (operator-chosen tag `jewishgold` is an antisemitic slur); same ChaCha20 key and nonce as vitacoco/iambig; uses the same 11-port rotation as the post-2026-05-01 iambig rebuild

@@ -1,0 +1,7 @@
+key_type,value,notes
+chacha20_key,5a3f2e7b8c9d0a6e3b4f7c8a1d5c2b0d6f1a0c3e2d8e4a091c7e5a4d3c2b6a08,32-byte IETF ChaCha20 key; byte-identical across every potassium sample we have analysed
+chacha20_nonce,4a1b00ff2d7c3a1200010305,12-byte IETF ChaCha20 nonce; sits at key+0x20 in every build
+chacha20_counter,1,First 64-byte keystream block is skipped
+xor_key,ED,Single byte used for all C2 wire encoding (registration body and steady-state traffic in both directions)
+bot_seed,14861879,Fixed 8-digit seed every potassium bot appends random digits to for its bot ID
+killer_port,1234,TCP listener bound to discovered egress IP (127.0.0.1 fallback) as a single-instance lock
