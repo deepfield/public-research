@@ -1,6 +1,6 @@
 # Potassium
 
-*Last updated: 2026-05-20*
+*Last updated: 2026-05-21*
 
 ## Overview
 
@@ -20,7 +20,7 @@ See [`report.md`](report.md) for the full technical analysis: campaign attributi
 ## Technical summary
 
 - **Lineage:** Mirai fork, statically linked ELF, Aboriginal Linux GCC 4.2.1 toolchain (shared with [Katana](../katana/) and Flameblox — common build environment, not shared code)
-- **C2 transport:** Raw TCP, no TLS, no per-session key exchange; payloads XOR-encoded with `0xED`
+- **C2 transport:** Raw TCP, no TLS, no per-session key exchange; payloads XOR-encoded with `0xED`. Registration packets carry a 2-byte trailer (broken halved-length Internet checksum; the live C2 accepts other checksum forms, indicating server-side validation was loosened post-compilation)
 - **C2 resolution:** Custom in-binary DNS client to `8.8.8.8:53`; bot swaps the two 16-bit halves of the resolved IP (`A.B.C.D → C.D.A.B`) before `connect()`. Public DNS A records are decoys in unrelated ASNs (Vermont University, NRC Canada, AWS, Telecom Italia, Kazakh broadband)
 - **Crypto:** IETF ChaCha20 (counter=1) for the 222-entry static config table; static single-byte XOR (`0xED`) for all wire traffic. Same key and nonce across every analyzed sample
 - **Attack vectors:** 20-entry dispatch table (UDP/TCP/HTTP/ICMP/GRE floods); IDs reassigned relative to reference Mirai, so handler name does not always match wire transport (e.g. `udp_raw` is DGRAM, `tcp_socket` is UDP)

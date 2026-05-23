@@ -127,7 +127,7 @@ This convergence of naming, infrastructure, and cryptographic choices positions 
 
 ## Operator attribution
 
-A satirical blog styled after Krebs on Security ("Kirkon Security") published a writeup targeting the operator behind `www.boatdealers[.]su`, the same primary C2 domain used by Jackskid ("Kirkon Security" (satirical), ["Sorrow: from botless to less botless"](https://kirkonsecurity.com/?article=sorrow-from-botless-to-less-botless). The site's name and styling parody Krebs on Security and appear to originate from a rival botnet operation). The article attributes the botnet to an individual operating under the handle **Sorrow**, claims approximately 300,000 compromised residential devices (primarily Android/ADB), and highlights an OpSec failure where the download server was co-located with the botnet management panel. The dox-by-blog format represents either an emerging trend in competitive intelligence or a very specific grudge.
+A satirical blog styled after Krebs on Security ("Kirk on Security") published a writeup targeting the operator behind `www.boatdealers[.]su`, the same primary C2 domain used by Jackskid ("Kirk on Security" (satirical), ["Sorrow: from botless to less botless"](https://kirkonsecurity.com/?article=sorrow-from-botless-to-less-botless). The site's name and styling parody Krebs on Security and appear to originate from a rival botnet operation). The article attributes the botnet to an individual operating under the handle **Sorrow**, claims approximately 300,000 compromised residential devices (primarily Android/ADB), and highlights an OpSec failure where the download server was co-located with the botnet management panel. The dox-by-blog format represents either an emerging trend in competitive intelligence or a very specific grudge.
 
 The site's likely provenance (the Kimwolf ecosystem, which shares infrastructure with Jackskid) means the claims should be treated as adversarial intelligence: potentially accurate on technical details the rival would know firsthand, but motivated by competitive interests rather than public safety.
 
@@ -1011,4 +1011,10 @@ The encrypted config contains fake `.so` library names used to fingerprint sandb
 | Mar 2026 | `jilcore.6.so`, `jipplib.1.so`, `jibdata.2.so`, `jiblib.5.so` |
 
 The naming pattern (`ji*` prefix) is consistent enough to use as a detection signal, while the rotation demonstrates active anti-analysis maintenance — a changelog for libraries that don't exist.
+
+## Edit history
+
+| Date | Change |
+|------|--------|
+| 2026-05-23 | Corrected "Kirkon Security" to "Kirk on Security" (the satirical blog's name mirrors "Krebs on Security" styling, not a single word). |
 
