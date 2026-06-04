@@ -14,10 +14,12 @@ This repo consolidates prior community research with original Deepfield ERT anal
 |-----------|-------------|
 | [aisuru](aisuru/) | Mirai-derivative DDoS botnet, active since August 2024 |
 | [cecbot](cecbot/) | CECbot: Android TV botnet with HDMI-CEC abuse, successor to Katana |
-| [drifter](drifter/) | Independent DDoS botnet on ADB attack surface, CCTV-themed C2 domains |
 | [cecilio](cecilio/) | CatDDoS derivative with modified RC4 cipher, OpenNIC C2 |
+| [datasurge](datasurge/) | Mirai-lineage bot with no self-propagation; competitor-killing scanner larger than its DDoS engine, plus operator RAT features |
+| [drifter](drifter/) | Independent DDoS botnet on ADB attack surface, CCTV-themed C2 domains |
 | [jackskid](jackskid/) | Mirai variant sharing code lineage with Aisuru, DoH C2 via mbedTLS |
 | [katana](katana/) | Mirai variant with on-device compiled rootkit, targeting Android TV set-top boxes |
+| [kbotne](kbotne/) | Mirai-lineage DDoS botnet with WebSocket C2 on port 80, hex-encoded config strings, and a broken Android APK |
 | [kimwolf](kimwolf/) | Dual-purpose residential proxy and DDoS botnet, 3M+ devices observed |
 | [maskify](maskify/) | Dual-purpose proxy/DDoS botnet with ENS, IPFS, and custom P2P mesh |
 | [mossadproxy](mossadproxy/) | Android TV/IoT DDoS botnet via ADB, operationally linked to ecosystem |

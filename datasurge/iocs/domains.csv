@@ -1,0 +1,5 @@
+domain,c2_method,first_seen,status,notes
+datasurge-bot.com,dns_txt,2026-05-31,active,registered 2026-02-03 via IONOS; Cloudflare NS; no A record but TXT record serves XOR-obfuscated C2 IP
+datasurge.vip,operator_infra,2026-03-13,,operator branding/web infrastructure (Breakglass Intelligence)
+report.datasurge.vip,operator_infra,2026-03-13,,operator panel (Breakglass Intelligence)
+pay.datasurge.vip,operator_infra,2026-03-13,,payment portal (Breakglass Intelligence)

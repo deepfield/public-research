@@ -1,0 +1,4 @@
+ip,port,role,hosting,first_seen,status,notes
+5.175.223.69,8082,c2,NextHost (DE),2026-06-04,active,C2 IP; served via DNS TXT record on datasurge-bot.com
+5.175.223.124,,payload_distribution,NextHost (DE),2026-03-13,,payload distribution server (Breakglass Intelligence)
+130.12.180.151,25565,c2,Netiface LLC (US),2026-03-13,,earlier C2 server (Breakglass Intelligence)

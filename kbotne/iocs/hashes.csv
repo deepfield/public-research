@@ -1,0 +1,5 @@
+sha256,type,arch,size,first_seen,notes
+69bd7a4756a1be3d565b30aee8f5fcc2311914f4adf3aec0219b165d0e24ed6a,ELF,ARM EABI4,49404,2026-04-09,"UPX-packed; WebSocket C2 real.botnet.st/connectlol; tag ilovecatgirlsowouwugaysex1111; served from 185.231.155.250:1"
+f342c992ba0799c68f4d0c830b6df83cbcb742659e95cf764ced883526568610,ELF,ARM EABI4,116496,2026-05-08,"Unpacked WebSocket Mirai/kbotne-family build; real.botnet.st/connectlol; 10 attack handlers in Ghidra dispatcher; served from 185.231.155.250:2"
+1f9b60841534fb6771253e76c36d93572426c89aeadf09ab2294e389826b452e,ELF,ARM EABI4,118204,2026-06-01,"Unpacked rebuild; 10 attack methods; HTTP /check update poller; served from 185.231.155.250:2"
+091e48cd7a92a9793831d34e15cfc6019826eef129db8678316bd8507b51d5d4,APK,,622640,2026-04-09,"com.kbotne.reboot; truncated ZIP (no EOCD); does not install; served from 185.231.155.250:80"

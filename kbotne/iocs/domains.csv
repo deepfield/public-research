@@ -1,0 +1,2 @@
+domain,role,first_seen,status,notes
+real.botnet.st,C2,2026-04-09,active,"WebSocket C2 on port 80; path /connectlol; bot resolves via custom DNS client to 8.8.8.8:53; public DNS observed resolving to 81.28.12.12 on 2026-06-04"

@@ -1,0 +1,3 @@
+ip,port,role,first_seen,status,notes
+185.231.155.250,"1,2,80,1007",delivery,2026-04-09,active,":1 nc push (UPX-packed arm7 69bd7a47); :2 nc push (unpacked arm7 f342c992 observed 2026-05-08 and 1f9b6084 observed 2026-06-01); :80 HTTP serves kbotne.apk (broken ZIP); :1007 nc intermittent"
+81.28.12.12,80,C2,2026-06-04,active,"Current A record for real.botnet.st observed via 1.1.1.1 and 8.8.8.8 during publication review; domain-based C2 may rotate"

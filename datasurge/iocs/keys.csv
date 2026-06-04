@@ -1,0 +1,2 @@
+key_hex,purpose,notes
+CAFEBABE,config_table_xor,4-byte key; folded to single XOR byte 0x30; combined with ROT13
