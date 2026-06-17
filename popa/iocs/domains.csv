@@ -1,0 +1,39 @@
+domain,c2_method,observed,status,notes
+lb.gmslb.net,https-regdev,2026-06-03,active,proxy director/LB; GET /regdev returns peer_servers; 10x OVH IPs; Cloudflare DNS; nginx/Express
+viki-play.com,tls-relay-6000,2026-06-03,active,relay/exit front; sN.viki-play.com:6000; rotating front for the fleet
+star-layer.com,tls-relay-6000,2026-06-03,active,relay/exit front; sN.star-layer.com:6000; CF NS asa/david
+novel-layer.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS asa/david
+house-spirit.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS asa/david
+byte-buff.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+swift-zip.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+yoursfind.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+sdkmob.org,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+zen-tava.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+byte-armor.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+link-flux.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+tera-home.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+pulse-vol.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+net-echo.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+shield-sky.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+world2trust.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+pixellog.io,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+cool-horizon.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+ginuary.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+fast-mob.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+litics-net.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+nova-lan.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+sky-borders.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+grid-push.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+nice-protect.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+flexible-networks.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+worker-net.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+earth2trust.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+zync-stream.com,tls-relay-6000,2026-06-03,active,relay/exit front; CF NS ariella/jake
+phonemesh.org,tls-director,2026-06-03,sinkholed,Popa/Vo1d C2 (XLab); sinkholed; DNS-confirmed 2026-06-03
+linkmob.org,tls-director,2026-06-03,sinkholed,Popa/Vo1d C2 (XLab); sinkholed; DNS-confirmed 2026-06-03
+peercon.org,tls-director,2026-06-03,sinkholed,Popa/Vo1d C2 (XLab); sinkholed; DNS-confirmed 2026-06-03
+phonegrid.org,tls-director,2026-06-03,sinkholed,Popa/Vo1d C2 (XLab); sinkholed; DNS-confirmed 2026-06-03
+safernetwork.io,tls-director,2026-06-03,inactive,Popa/Vo1d C2 (XLab); NXDOMAIN as of 2026-06-03
+lbk-sol.com,tls-director,2026-06-03,sinkholed,Popa/Vo1d C2 (XLab); sinkholed; DNS-confirmed 2026-06-03
+sklstech.com,tls-director,2026-06-03,sinkholed,Popa/Vo1d C2 (XLab); sinkholed; DNS-confirmed 2026-06-03
+kyc-holdings.com,tls-director,2026-06-03,sinkholed,Popa/Vo1d C2 (XLab); sinkholed; DNS-confirmed 2026-06-03

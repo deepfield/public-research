@@ -1,0 +1,11 @@
+ip,port,role,hosting,observed,status,notes
+51.75.62.214,443,director,OVH,2026-06-03,active,lb.gmslb.net (proxy LB/director)
+51.75.169.138,443,director,OVH,2026-06-03,active,lb.gmslb.net
+51.75.169.155,443,director,OVH,2026-06-03,active,lb.gmslb.net
+91.134.11.137,443,director,OVH,2026-06-03,active,lb.gmslb.net
+91.134.98.159,443,director,OVH,2026-06-03,active,lb.gmslb.net
+91.134.98.229,443,director,OVH,2026-06-03,active,lb.gmslb.net
+145.239.29.238,443,director,OVH,2026-06-03,active,lb.gmslb.net
+162.19.237.9,443,director,OVH,2026-06-03,active,lb.gmslb.net
+162.19.239.144,443,director,OVH,2026-06-03,active,lb.gmslb.net
+51.38.222.163,443,director,OVH,2026-06-03,active,lb.gmslb.net
