@@ -1,0 +1,15 @@
+drive_id,decryption_key,source,drive_status,notes
+1-icCMfrW9XWplCdf0MQAlw03xyJ57xf9,sdfrtyhjklfds12!,Synthient GitHub,works as of 2026-06-22,relay domains: byte-buff.com; star-layer.com; novel-layer.com; house-spirit.com
+15yxCI0DKs-1xfqC3wgz5jTZWuNXARulW,lupharzenkot913!,Synthient GitHub,works as of 2026-06-22,relay domains: viki-play.com; byte-buff.com; star-layer.com; novel-layer.com; house-spirit.com
+1DhhijqDXRDx5VBRv9jUwKAlzEufbvzej,qwsdvcsdfgh1234!,Synthient GitHub,works as of 2026-06-22,relay domains: byte-buff.com; star-layer.com; novel-layer.com; house-spirit.com
+1HnOFi7ouTsBbIwyzKdVlcoWlQE-ipj_t,blazernoktub284!,Synthient GitHub,works as of 2026-06-22,relay domains: worker-net.com; axe-net.com; flexible-networks.com; grid-push.com; mob-hit.com
+1K95AXo75gi-jJSE9vuVPVEyBya0JUm0w,eeorahrabcap286!,Synthient GitHub; Nokia Deepfield,works as of 2026-06-22,relay domains: gmslb.net; fast-mob.com; sdkmob.org; swift-zip.com
+1eYzAFPj1cdGAmj3Dya7w4n9ITZc9TMvd,cravintelmur301!,Synthient GitHub,works as of 2026-06-22,relay domains: pulse-vol.com; nova-lan.com; link-flux.com; litics-net.com; noverland.com
+1f0cJDb1XHE0LRZbhNQ7cGV3KC6Ihejaf,mertozlangip603!,Nokia Deepfield,404 as of 2026-06-22,MediaGet neunative.dll backup URL; returned 404 during Nokia Deepfield checks
+1iQ7on1FRg8qlCxMjnRzxcYDGQ-20OduC,zoknimReptud712!,Synthient GitHub; Nokia Deepfield APK analysis,works as of 2026-06-22,observed in APK SHA-256 19fb12866ce6a27ae220a82f0acd680ae874509a9e8530b41f8ffbe27d011285; decrypted by Nokia Deepfield to nice-protect.com
+1mIETmtORYydJvC5OyTob25HuIPR1u0V2,darnokvempra742!,Synthient GitHub; Qurium,works as of 2026-06-22,relay domains: viki-play.com; byte-buff.com; star-layer.com; novel-layer.com; house-spirit.com
+1nyiqZ7iNprYPTZKnJcEFNsD7__8UONjD,zandrexfulbar12!,Synthient GitHub; Nokia Deepfield,works as of 2026-06-22,decrypted by Nokia Deepfield to net-echo.com; sky-borders.com; tera-home.com
+1r8-bPcgcyJ7f8UzckKEoDaJCdAq9PhFh,frintavozges915!,Synthient GitHub,works as of 2026-06-22,relay domains: worker-net.com; axe-net.com; flexible-networks.com; grid-push.com; mob-hit.com
+1v-FyGztZEfq7o78w5JHX1S1xmkvplaNm,vemlutDakros643!,Synthient GitHub; Nokia Deepfield APK analysis,works as of 2026-06-22,observed in APK SHA-256 19fb12866ce6a27ae220a82f0acd680ae874509a9e8530b41f8ffbe27d011285; decrypted by Nokia Deepfield to nice-protect.com
+16PIzMOKDaOfhT0i6Yrc28yOX-PP781_T,kellovbrytag573!,Nokia Deepfield APK analysis; Qurium,works as of 2026-06-22,observed in SmartTube APK SHA-256 a1609d959642ac32a259d4cd71ebb8b6ac8d40fff6983ab51ea959b2cc7d233d; AlphaPop primary URL; decrypted by Nokia Deepfield to voltix-net.com; zen-tava.com; zync-stream.com
+198AM07s0exNJ-Yvvs2R4RlTho9hBWV2z,,Nokia Deepfield APK analysis,works as of 2026-06-22,observed in SmartTube APK SHA-256 a1609d959642ac32a259d4cd71ebb8b6ac8d40fff6983ab51ea959b2cc7d233d; AlphaPop stage-3 URL; embedded code would try kellovbrytag573! but current 48-byte blob fails AES-128-ECB with that key and all known CSV keys
