@@ -24,6 +24,7 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | [maskify](maskify/) | Dual-purpose proxy/DDoS botnet with ENS, IPFS, and custom P2P mesh |
 | [mossadproxy](mossadproxy/) | Android TV/IoT DDoS botnet via ADB, operationally linked to ecosystem |
 | [potassium](potassium/) | Mirai variant with SHELL/SHOUT reverse-shell protocol on the C2 channel, three rotating campaigns from one codebase |
+| [vibenet](vibenet/) | Custom DDoS family whose latest Linux build ships its own TLS/QUIC/HTTP3 stack to flood at Layer 7 behind a browser fingerprint, with on-chain ENS command-and-control |
 
 ## Reports
 

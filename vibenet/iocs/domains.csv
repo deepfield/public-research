@@ -1,0 +1,8 @@
+domain,c2_method,first_seen,status,notes
+fuckyou.femboy-e.date,dns_xtea,2025-10,active,"v1-v3 primary C2; XTEA-encrypted in binary; resolved to 45.67.138.24; DoT/DoH resolution"
+fuckyou.femboys.dating,dns_xtea,2026-03,active,"v1-v3 fallback C2; same IP as primary (45.67.138.24)"
+tristan.sexy,dns,2026-04,active,"Linux 'fox'/CHINKBOT variant C2; passed as argv[1] to fox.arm7/fox.arm64"
+tristan.too.sexy,dns,2026-04,active,"Linux 'fox' variant C2; seen in ADB honeypot logs"
+meow.fuckmepls.eth,ens_text_record,2026-04,active,"v4/v5 ENS dead-drop C2; text record keys 'meow' and 'description' (base64 IPv4 list); resolved via public ETH RPC; ENS Public Resolver 0xF29100983E058B709F3D539b0c765937B804AC15"
+alextyler.eth,ens_text_record,2026-06-23,parked,"This build's ENS C2 dead drop; key 'description'; XOR-IPv6 (mask 0x4ab73ce1); decoded 2026-06-23 to 127.0.0.1 (parked); owner wallet 0x1b5b80737c9b62b1c7e362735bf158ee5dd60cb1"
+apk.alextyler.st,http_delivery,2026-06,unknown,"Delivery host for the Heilong/libyahu APK and native bot; plain-HTTP /<abi>/libyahu.so; shared ecosystem, not by itself operator linkage"
