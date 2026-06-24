@@ -4,7 +4,7 @@ description,ens_text_key,"ENS text record key holding the C2 list (XOR-IPv6 enco
 F29100983E058B709F3D539b0c765937B804AC15,ens_resolver_contract,"ENS Public Resolver 3 deployment on Ethereum mainnet read by the bot; also used by jackskid and other tracked ENS dead-drop samples"
 59d1d43c,ens_selector_text,"text(bytes32,string) selector used to read the C2 record"
 4ab73ce1,config_xor_mask,"XOR mask deobfuscating the last two IPv6 groups into the C2 IPv4 (emitted LSB-first)"
-a35fc8912d764eb0671af38439c25b0e,string_table_key,"Encrypted-string-table key; RC4 keystream XOR Galois-LFSR (polynomial 0x80200003); shared with the family's prior Linux build"
+a35fc8912d764eb0671af38439c25b0e,string_table_key,"Encrypted-string-table key; RC4 keystream XOR Galois-LFSR (polynomial 0x80200003, seed 0x12345678); shared with the family's prior x86-64 build f2671998 (code-level link)"
 DEADBEEF CAFEBABE 8BADF00D 1337C0DE,xtea_config_key,"XTEA config-encryption key used by the family's v1-v5 native bots (libsupport.so / libkys.so / libyahu.so); not used by this build"
 VIBENET123456789,xxtea_config_key,"XXTEA config key in the CHINKBOT_FILELESS Linux 'fox' variant (df16101d / 2c68b235); also present as a v5 config string"
 9aa3d95b3bc440fa88ea12eaa4456161,infura_project_id,"Widely reused public Infura project ID embedded in the copied RPC provider list (mainnet.infura.io/v3/...); provider-list fingerprint only, not operator attribution"
