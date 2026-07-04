@@ -4,6 +4,8 @@
 
 **First published: 2026-04-12**
 
+**Update (2026-07-04):** The family has since forked. A [follow-up report](report-2026-07-04-two-fleets.md) documents the split into a proxy-only SDK and a standalone Linux DDoS bot (`earnify-client`), and supersedes the v2 C2 protocol table below.
+
 > **Content warning:** This report quotes malware artifacts verbatim, including domain names, ENS records, and HTTP headers chosen by the threat actors. Some contain crude or offensive language. These are reproduced exactly as found in samples to enable accurate detection and attribution.
 
 ---

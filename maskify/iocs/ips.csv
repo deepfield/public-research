@@ -1,3 +1,11 @@
 ip,role,hosting,description
-84.21.189.244,staging+c2,QWINS (DE),v2 loader :6969 and SDK/C2 :4433
-158.94.208.131,c2,,"v2 C2 :4433 (QUIC) and DDoS template staging :6969 — from ENS announcement"
+84.21.189.244,staging+c2,QWINS (DE),v2 loader :6969 and SDK/C2 :4433 — dark since ~2026-04-23
+158.94.208.131,c2,,"v2/v3 C2 :4433 (QUIC) still live; :6969 template/nc staging now dark — from ENS announcement"
+45.194.92.2,staging,VPSVAULT.HOST,staging host — dark since ~2026-04-23 (now nginx 404)
+162.249.125.147,delivery,,v3 cross-family APK served from :8097 (Jackskid loader infra) — host gone
+37.49.224.110,mesh_peer,"AS61254 (ESTOXY OU / pushpkt, EE)","v3 mesh peer :4433; most-active peer (642 assignments 2026-06-27); hardcoded seed peer in SDK 1.0.7"
+45.139.197.242,mesh_peer,"AS204044 (Packet Star Networks, GB)",v3 mesh peer :4433
+130.78.218.202,mesh_peer,"AS204044 (Packet Star Networks, GB)",v3 mesh peer :4433; 130.78.216.0/22 cluster
+130.78.219.74,mesh_peer,"AS204044 (Packet Star Networks, GB)",v3 mesh peer :4433; 130.78.216.0/22 cluster
+130.78.217.194,delivery,"AS204044 (Packet Star Networks, GB)","earnify-client delivery host — dropper 609ecf41; nc ports by arch + HTTP :8888/bot.$ARCH; same 130.78.216.0/22 block as mesh peers; 2026-07-02"
+37.49.230.40,mesh_peer,"AS61254 (ESTOXY OU / pushpkt, EE)","v3 mesh peer :4433; busiest peer in reconstruction (6,087 ConnectToServer assignments 2026-05-08 to 07-03); also VT co-communication endpoint for the Linux earnify-client ELFs (03d09c35 aarch64, a4e560c6 x86_64)"

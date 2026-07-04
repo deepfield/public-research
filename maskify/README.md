@@ -1,16 +1,17 @@
 # Maskify
 
-*Last updated: 2026-04-12*
+*Last updated: 2026-07-04*
 
 ## Overview
 
-Maskify is a community-attributed name for a dual-purpose Android botnet: residential proxy and DDoS attack platform. The Earnify SDK (`io.earnify`) is a Rust-compiled native library distributed via IPFS and updated through the Ethereum Name Service (ENS). It bundles a TCP/UDP proxy relay, three DDoS flood modules, and Za Rodinu, a custom P2P mesh network not previously documented. The operator can push new capabilities to the fleet without modifying the APK.
+Maskify is a community-attributed name for a dual-purpose Android botnet: residential proxy and DDoS attack platform. The Earnify SDK (`io.earnify`) is a Rust-compiled native library distributed via IPFS and updated through the Ethereum Name Service (ENS). It bundles a TCP/UDP proxy relay, three DDoS flood modules, and Za Rodinu, a custom P2P mesh network not previously documented. The operator can push new capabilities to the fleet without modifying the APK. As of the July 2026 follow-up, the family has forked: the SDK is now proxy-only, and the flood engine moved into a standalone Linux client (`earnify-client`).
 
 The name comes from the operator's Cloudflare Workers staging domain (`maskify.workers[.]dev`), attributed by [Ben / Synthient](https://x.com/deobfuscately/status/2041151620486987898). First observed 2026-01-13 (v1 DGA domain registration). Maskify competes for ADB-exposed Android TV devices with families documented in the [Aisuru ecosystem report](../reports/2026-03-20-aisuru-ecosystem.md) and [Drifter](../drifter/).
 
-## Report
+## Reports
 
-See [`report.md`](report.md) for the full technical analysis, including ENS/IPFS update infrastructure, Za Rodinu mesh architecture, C2 protocol, DDoS attack methods, and proxyware model.
+- [`report.md`](report.md) — full technical analysis (April 2026): ENS/IPFS update infrastructure, Za Rodinu mesh architecture, C2 protocol, DDoS attack methods, and the proxyware model.
+- [`report-2026-07-04-two-fleets.md`](report-2026-07-04-two-fleets.md) — follow-up (July 2026): the v2→v3 fork into a proxy-only SDK and a standalone Linux DDoS bot (`earnify-client`), the renumbered `relay1.0.0` protocol, the reconstructed flood campaign, and the kernel rootkit.
 
 ## Prior research
 
