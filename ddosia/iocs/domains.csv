@@ -1,0 +1,13 @@
+domain,c2_method,first_seen,status,notes
+KDXA.gwYhHCOrybwjWuzh.info,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (mid-2025); no longer actor-controlled (now delegated to a third-party measurement nameserver and resolving to a cloud host that answers the C2 API with an empty target list); not live actor C2; live tasking is direct-IP"
+KDXA.GaihWstPZUoMtfnU.info,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (mid-2025); no longer actor-controlled (answers the C2 API with an empty target list); not live actor C2"
+KDXA.GaihWstPZUoMtfnU.live,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (.live variant, mid-2025); no longer actor-controlled; not live actor C2"
+KDXA.zkUAFIMFDwVETXJQ.info,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (mid-2025); no longer actor-controlled; not live actor C2"
+KDXA.zkUAFIMFDwVETXJQ.live,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (mid-2025); no longer actor-controlled; not live actor C2. Resolved to 35.225.197.113 (GCP) in mid-2025"
+EICp.GaihWstPZUoMtfnU.info,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (EICp prefix, mid-2025); no longer actor-controlled; not live actor C2"
+EICp.GaihWstPZUoMtfnU.live,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (mid-2025); no longer actor-controlled; not live actor C2"
+kHbW.gwYhHCOrybwjWuzh.live,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (kHbW prefix, mid-2025); no longer actor-controlled; not live actor C2"
+kHbW.GaihWstPZUoMtfnU.info,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (mid-2025); no longer actor-controlled; not live actor C2"
+kHbW.zkUAFIMFDwVETXJQ.info,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (mid-2025); no longer actor-controlled; not live actor C2"
+YFrV.gwYhHCOrybwjWuzh.live,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (YFrV prefix, mid-2025); no longer actor-controlled; not live actor C2"
+YFrV.GaihWstPZUoMtfnU.info,dns_then_http,2025-06-20,unknown,"DDoSia DGA rendezvous subdomain (mid-2025); no longer actor-controlled; not live actor C2"

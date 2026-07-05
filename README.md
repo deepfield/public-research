@@ -16,6 +16,7 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | [cecbot](cecbot/) | CECbot: Android TV botnet with HDMI-CEC abuse, successor to Katana |
 | [cecilio](cecilio/) | CatDDoS derivative with modified RC4 cipher, OpenNIC C2 |
 | [datasurge](datasurge/) | Mirai-lineage bot with no self-propagation; competitor-killing scanner larger than its DDoS engine, plus operator RAT features |
+| [ddosia](ddosia/) | DDoS client of the pro-Russian hacktivist group NoName057(16); crowdsourced, gamified crypto-reward leaderboard whose self-reported impact is trivially fabricated |
 | [drifter](drifter/) | Independent DDoS botnet on ADB attack surface, CCTV-themed C2 domains |
 | [jackskid](jackskid/) | Mirai variant sharing code lineage with Aisuru, DoH C2 via mbedTLS |
 | [katana](katana/) | Mirai variant with on-device compiled rootkit, targeting Android TV set-top boxes |

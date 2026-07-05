@@ -1,0 +1,10 @@
+ip,port,role,hosting,first_seen,status,notes
+185.76.78.136,80,c2,unknown,2026-07-05,active,"LIVE target-serving C2 (plaintext HTTP/80); validated end-to-end 2026-07-05 (login 200 + get_targets returns 200 targets). Actor's active direct-IP C2; tasking has moved off the DGA rendezvous domains to direct IPs like this"
+151.236.18.179,80,c2,unknown,2026-05-05,unknown,"C2 serving /client/set_attack_count over plaintext HTTP; observed in process core dump of d_lin_x64"
+153.75.85.190,80,c2,unknown,2025-06-15,inactive,"recorded C2 (analysis-host c2.txt); status DOWN at capture"
+194.226.121.51,80,c2,unknown,2025-06-20,unknown,"mid-2025 DGA-pool resolution (<4char>.<16char>.{info,live}); the DGA rendezvous layer is no longer actor-controlled; treat as historical, not live C2"
+188.92.28.62,80,c2,unknown,2025-06-20,unknown,"mid-2025 DGA-pool resolution; the DGA rendezvous layer is no longer actor-controlled; treat as historical, not live C2"
+192.145.28.71,80,c2,unknown,2025-06-20,unknown,"mid-2025 DGA-pool resolution; the DGA rendezvous layer is no longer actor-controlled; treat as historical, not live C2"
+45.89.63.25,80,c2,unknown,2025-06-20,unknown,"mid-2025 DGA-pool resolution; the DGA rendezvous layer is no longer actor-controlled; treat as historical, not live C2"
+172.234.130.93,80,c2,unknown,2025-06-20,unknown,"mid-2025 DGA-pool resolution (KDXA.gwYhHCOrybwjWuzh.info); the DGA rendezvous layer is no longer actor-controlled; treat as historical, not live C2"
+35.225.197.113,80,c2,Google Cloud,2025-06-20,unknown,"mid-2025 DGA-pool resolution (KDXA.zkUAFIMFDwVETXJQ.live); the DGA rendezvous layer is no longer actor-controlled; treat as historical, not live C2"

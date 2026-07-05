@@ -1,0 +1,2 @@
+sha256,arch,first_seen,description
+2aaf3c08da86d5d0f6f9c00d4011991fd2cd50fa0777d51d5552b98365b15774,x86_64,2024-11-06,"DDoSia (NoName057(16)) Linux x64 client d_lin_x64; Go 1.22, CGO; garble -literals + clobbered gopclntab magic (f3 33 18 d2) + wiped buildinfo (unknown); gopacket L3/L4 (syn/udp), crypto/tls + net/http (http/http2) + quic-go (http3) L7; AES-GCM-encrypted target list; bcrypt client_id"
