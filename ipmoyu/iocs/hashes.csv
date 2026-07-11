@@ -1,0 +1,8 @@
+sha256,type,first_seen,description
+8226f44581a8bd9f1e9119a56929b9df66d725265076b7d9cdd96e8b132d8427,apk,2026-01,"tigertv vehicle APK (com.android.tigertv v1.1.2); MoYu/BADBOX delivery vehicle; clean VLC IPTV app"
+21cccd01d10127c3c91442747c351d91ba60de004665986b420a092214bca837,apk,2026-01,"tigertv vehicle APK (TIGER_TV build); observed dropping the BADBOX stage"
+96a48ef53a1ed4f9ffada09b82cab9d965a61a2d3b70490a46821d8102d811fd,apk,2026-01,"tigertv vehicle APK (v1.1.2, 2026-01-12 build)"
+5638154727931471ae557cd89953e9686af10fa35c21ee30cee4208ecc76d662,apk,2026-01,"tigertv vehicle APK (single-arch; brands TIGER_TV/MIO_Plus/Vo_Vivo)"
+84d1675640c21bb497bfd230ad31d403d1093a1c75acb2002f84718533b52d08,jar,2026-07,"MoYu/BADBOX module sh65.io (com.miyc.transfer.Client 'zhima' residential-proxy engine); md5 de77c3303e93c9450424759f1741441c; pulled live from 144.217.243[.]201 2026-07-09"
+906734ebb9a274c5c83a22a4475e27354857d7b5b62a4ab6bb5d8d365692e963,jar,2026-07,"MoYu/BADBOX module sh66.io (com.miyc.transfer); md5 71ab5517f71866279d0d87d37f2ae320; pulled live 2026-07-09"
+ccce124a28b1c181c0f18ae8bd1b47ea1904e6f108b8d10664838c37262d4640,jar,2025-06,"host.dex first-stage loader (com.xgw.f); dropped by tigertv vehicle to files/Download/host.dex; md5 e266963a; packaged 2025-06-06; fetches dex_api.txt then XOR-decodes and DexClassLoads sdk.jar -> frh.xrb; captured via dynamic detonation 2026-07-09"
