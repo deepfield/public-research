@@ -19,6 +19,7 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | [ddosia](ddosia/) | DDoS client of the pro-Russian hacktivist group NoName057(16); crowdsourced, gamified crypto-reward leaderboard whose self-reported impact is trivially fabricated |
 | [drifter](drifter/) | Independent DDoS botnet on ADB attack surface, CCTV-themed C2 domains |
 | [ipmoyu](ipmoyu/) | MoYu / BadBox 2.0 residential proxy delivered at runtime by clean grey-market Android-TV IPTV apps (the tigertv family) |
+| [iranbot](iranbot/) | Self-branded IRAN-BOTNET DDoS family whose three builds shed encryption and branding while gaining a backdoor and then self-propagation, never reusing infrastructure — disposable by design |
 | [jackskid](jackskid/) | Mirai variant sharing code lineage with Aisuru, DoH C2 via mbedTLS |
 | [katana](katana/) | Mirai variant with on-device compiled rootkit, targeting Android TV set-top boxes |
 | [kbotne](kbotne/) | Mirai-lineage DDoS botnet with WebSocket C2 on port 80, hex-encoded config strings, and a broken Android APK |

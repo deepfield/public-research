@@ -1,0 +1,6 @@
+ip,port,role,hosting,first_seen,status,notes
+31.56.209.125,80,staging,AS209373 SWISSNET LLC,2026-06-08,down,"armv7l staging server; served WindowsXP.armv7l over HTTP/80 and WindowsXP.raw over TCP/4444; also hosted APK Iranbott.apk (com.iranbot.load); dark since ~2026-06-08"
+141.11.88.108,81,distribution,AS198364 BANATSYNC SRL,2026-07-05,down,"x86_64 drop point http://141.11.88.108:81/xpe.x86_64 (build 7e4d2b3b); xpe.<arch> naming; hosts on ports 80-84; taken down shortly after 2026-07-05"
+45.205.1.36,44510,c2,AS215925 VPSVAULT.HOST LTD,2026-06-24,down,"armv7l build (62e424b2) C2; femboys.chloebulldog.online resolves here as of 2026-07-21; host unreachable as of 2026-07-21"
+103.83.87.122,8060,c2,AS44382 Fiba Cloud Operation Company LLC (TR),2026-07-20,active,"x86_64 self-replicating build (b1a6dba6) C2; plaintext TCP, hardcoded IP literal (no DNS, no config crypto); port 8060; live as of 2026-07-21"
+103.83.87.122,80,distribution,AS44382 Fiba Cloud Operation Company LLC (TR),2026-07-20,active,"self-replication HTTP stager host for b1a6dba6 (same IP as the :8060 C2); serves telnet.sh (telnet spreader) and mipsel/mips (Realtek exploit spreader)"

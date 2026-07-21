@@ -1,0 +1,5 @@
+key_hex,purpose,notes
+88,x86_64_config_domain_xor,"single-byte XOR de-obfuscation of the embedded C2 domain in the x86_64 build (7e4d2b3b), FUN_0010780c over DAT_00114ea4; skip-set DAT_00114e88 = shell metachars {}#$!@?><()_+-=[]\|;':"",./~ ; decodes to mythickass.onthewifi.com"
+6a2096fa,armv7l_config_domain_seed,"glibc TYPE_3 random() seed (rounds 2) that decodes the armv7l build (62e424b2) embedded C2 domain -> femboys.chloebulldog.online; see tools/iranbot_cipher.py"
+9e3779b9,armv7l_hash_command_brute_constant,"per-byte keystream constant in the armv7l #C command cipher (with 0x7f3a9c2e, 0xa3b1c2d3, ROR#3); NOT present in the x86_64 build"
+1505,x86_64_login_djb2_seed,"djb2 hash seed (multiplier 0x21) used by the x86_64 telnet backdoor to check the randomly-generated login password (FUN_001090cd); creds are random per-run, reported to C2 in the registration line"

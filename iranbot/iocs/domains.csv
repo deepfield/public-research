@@ -1,0 +1,3 @@
+domain,c2_method,first_seen,status,notes
+femboys.chloebulldog.online,dns_then_tcp,2026-06-08,active,"armv7l build (62e424b2) C2, port 44510; encrypted #C command config (seed key 0x6a2096fa); resolves to 45.205.1.36 as of 2026-07-21; C2 host unreachable as of 2026-07-21"
+mythickass.onthewifi.com,dns_then_tcp,2026-07-09,inactive,"x86_64 build (7e4d2b3b) C2, port 313; embedded config single-byte XOR 0x88; bot resolves via hardcoded Quad9 9.9.9.9 DNS-over-UDP type-A query, bypassing /etc/resolv.conf; No-IP DDNS; no A record as of 2026-07-21 (dormant)"
