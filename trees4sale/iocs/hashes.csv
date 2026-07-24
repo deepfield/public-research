@@ -1,0 +1,11 @@
+sha256,arch,first_seen,description
+2a09a55911dcfea54ce275bc870ae1deec1a0c57a6cbffc85c8f5594c9f6e2ca,arm7,2026-06-29,"trees4sale bot (ELF ARM EABI4, static, stripped); earliest arm7 build; embeds the peer4you relay (UPnP RELAY mappings + ONLINE telemetry); C2 login.trees4sale.net (director port 9000); no DDoS engine"
+456c3c57daa85499909d308986c6bf64e746c3aa0475c80952c28765677c5f56,arm5,2026-06-28,"trees4sale bot (ELF ARM v1, static, stripped); one of two earliest builds; embeds the peer4you relay; C2 login.trees4sale.net"
+b7df4b4419e1bcf68c8aa3f65430e4892563cfbd8ec3a20a328b7265c726d9ae,arm7,2026-06-28,"trees4sale bot (ELF ARM EABI4, static, stripped); one of two earliest builds; embeds the peer4you relay; C2 login.trees4sale.net"
+4d7a477ac907125c84e0f8aa8a19fd01ea7f7f36eeb4add4de87e42866ca745e,arm5,2026-07-02,"trees4sale bot (ELF ARM v1, static, stripped); embeds the peer4you relay; C2 login.trees4sale.net"
+059b78013b92390545585e2719e30793bd02442946cd663a5352aaa2d6ea7bac,arm5,2026-07-14,"trees4sale bot (ELF ARM v1, static, stripped); Mirai-lineage residential-proxy relay (no DDoS engine per RE); C2 login.trees4sale.net / www.trees4sale.net"
+6ce99b03b6abf6a62caefde01e944aa57812e7572f24f186aba33a0d33501873,arm5,2026-07-14,"trees4sale bot (ELF ARM v1, static, stripped); embeds the peer4you relay; C2 login.trees4sale.net"
+bb06e66ece348de8f2d419923d5567a6ae2c49e08c6208cc17dcd4adb08a43d7,arm7,2026-07-14,"trees4sale bot (ELF ARM EABI4, static, stripped); embeds the peer4you relay; C2 login.trees4sale.net"
+c8c57243b9998b103dc9c46fb4ded2f046b961a81c531775c94931e33e901266,i386,2026-07-14,"trees4sale bot (ELF Intel 80386, static, stripped); the .exe upload name is not Windows, it is i386 ELF; embeds the peer4you relay; C2 login.trees4sale.net"
+e33b85ce4d37ecdf5ed7c28bbc28af4de1681596f57766dd0ea74bda6eababc1,aarch64,2026-07-14,"trees4sale bot (ELF ARM aarch64 static-pie, stripped); HTTP GET / beacon to www.trees4sale.net:80, peer4you relay ONLINE telemetry to director :18702, SSDP UPnP IGD RELAY discovery"
+c7ca29f33218ccb3faefe569f7ca29ee6271aaf941f0f6a2dbc0558ff5583233,unknown,2026-07-14,"trees4sale bot; VirusTotal detection only, binary not obtained; architecture unconfirmed"

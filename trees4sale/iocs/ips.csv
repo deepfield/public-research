@@ -1,0 +1,13 @@
+ip,port,role,hosting,first_seen,status,notes
+185.104.63.79,18702,c2_director,AS25198 INTERKVM HOST SRL / ZetServers (AT),2026-07-14,active,"login.trees4sale.net node; :80 open (Apache, serves a 10 MB loader/bandwidth blob); director ports :9000/:8081/:18702 filtered to external scanners (backconnect pattern); SAME node co-hosts the peer4you.net residential-proxy backconnect; arm builds use director port 9000, aarch64 builds 18702"
+76.164.203.165,80,loader,AS25198 INTERKVM HOST SRL / ZetServers (ES),2026-07-20,active,"www.trees4sale.net current A; :80 open (Apache open-directory loader host); bot GET / beacon target"
+38.87.116.165,18702,c2_director,AS58087 Florian Kolb / datalix.de (DE),2026-07-14,active,":18702 + :9000 + :8081 + :80 + :443 all open - a full second trees4sale director + peer4you backconnect node (:9000/:8081 = peer4you ports, :18702 = trees4sale director); most-exposed fleet host"
+167.114.127.95,80,c2_loader,AS16276 OVH SAS (CA),2026-07-14,active,":80 + :443 open (web); trees4sale.net fleet member; role (loader vs director) not fully characterized"
+88.151.195.254,,c2_loader,AS26383 Baxet Group Inc. (UA),2026-07-14,unknown,"trees4sale.net fleet member (passive DNS); no open ports observed on {18702,80,443,9000,8081}"
+144.31.38.215,,c2_loader,AS199566 Artem Lomakin / datapasa.com (DE),2026-07-14,unknown,"trees4sale.net fleet member (passive DNS); no open ports observed on the probed set"
+166.1.228.156,,c2_loader,AS26383 Baxet Group Inc. (CA),2026-07-14,unknown,"trees4sale.net fleet member (passive DNS); no open ports observed on the probed set"
+212.192.28.16,,c2_loader,AS397032 Sparked Host LLC (US),2026-07-14,unknown,"trees4sale.net fleet member (passive DNS); no open ports observed on the probed set"
+5.10.213.67,,c2_loader,AS26383 Baxet Group Inc. (FI),2026-07-14,unknown,"trees4sale.net fleet member (passive DNS); no open ports observed on the probed set"
+176.65.148.106,,c2_loader,AS51396 Pfcloud UG (NL),2026-07-14,unknown,"trees4sale.net fleet member (passive DNS); no open ports observed on the probed set"
+45.59.120.69,,c2_loader,AS14956 RouterHosting LLC / Cloudzy (AE),2026-07-14,unknown,"trees4sale.net fleet member (passive DNS); no open ports observed on the probed set"
+167.17.180.171,,c2_loader,AS26383 Baxet Group Inc. (DE),2026-07-14,unknown,"trees4sale.net fleet member (passive DNS); no open ports observed on the probed set"

@@ -1,0 +1,12 @@
+domain,c2_method,first_seen,status,notes
+www.c1s.su,dns_then_tcp,2026-07-13,active,"primary Mirai/relay C2 + director; rotates to 172.233.124.230 / 139.162.28.95 / 45.154.98.115; director port 9000; Cloudflare NS (gabriella/cleo); apex shared with jackskid c1s.su tier (jackskid uses tvt.c1s.su) and the .ffaaxx loader convention"
+c1s.su,dns,2026-07-13,inactive,"apex of www.c1s.su; no A record; Cloudflare NS"
+i.peer4you.net,http,2026-07-13,active,"peer4you relay director; now resolves to 185.104.63.79 (consolidated director); previously 45.138.16.96, which ran the relay POST {""status"":""ONLINE"",...} API on :9000 and a 'Peer Server - Login' panel on :8080, both now dark"
+o.peer4you.net,dns,2026-07-13,active,"peer4you datacenter pool (role uncertain per report: customer entry / actual egress / coordination); resolves to 5x Linode/Akamai datacenter IPs (IN/AU/BR/CA/FR)"
+peer4you.net,dns,2026-07-13,inactive,"brand apex; parked (no A record); Cloudflare NS (arushi/trace)"
+boblazar.inhumanencounters.org,http,2026-07-13,active,"HTTP report/loader endpoint (GET / on :80); resolves to 38.54.17.254 (LightNode SG); Area-51/UFO-themed root"
+roswell.inhumanencounters.org,dns,2026-07-13,unknown,"secondary report domain; shares the inhumanencounters.org Area-51/UFO theme with boblazar."
+cocoa.inhumanencounters.org,dns,2026-07-18,active,"newer subdomain; resolves to 185.104.63.79 (shared node = peer4you backconnect + trees4sale director); inhumanencounters.org apex previously on 217.60.195.160 (SWISSNET LLC, AS209373) alongside jackskid c1s.su and trees4sale login."
+persistfromchicago.com,relay_director,2026-07-23,active,"peer4you relay director for the lol2 module (b22133dd) carried in a jackskid Android APK (1a9a54eb, com.android.s4protect); Cloudflare NS arushi/trace (same pair as peer4you.net); n1. = node assignment/registration, tractor. = relay management (tractor echoes tractor.trees4sale.net)"
+n1.persistfromchicago.com,dns,2026-07-23,active,"node-assignment/registration endpoint; resolves to 162.35.179.210 (Interserver, AS26666, US)"
+tractor.persistfromchicago.com,dns,2026-07-23,active,"relay-management endpoint; resolves to 93.114.194.75 (INTERKVM HOST SRL, AS25198, RO; same ASN as cluster nodes 185.104.63.79/205.237.110.232/162.249.125.141)"

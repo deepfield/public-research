@@ -26,7 +26,9 @@ This repo consolidates prior community research with original Deepfield ERT anal
 | [kimwolf](kimwolf/) | Dual-purpose residential proxy and DDoS botnet, 3M+ devices observed |
 | [maskify](maskify/) | Dual-purpose proxy/DDoS botnet with ENS, IPFS, and custom P2P mesh |
 | [mossadproxy](mossadproxy/) | Android TV/IoT DDoS botnet via ADB, operationally linked to ecosystem |
+| [peer4you-mirai](peer4you-mirai/) | Mirai bot whose infected devices double as peer4you residential-proxy exit nodes; the dual-use bridge in the jackskid operator cluster |
 | [potassium](potassium/) | Mirai variant with SHELL/SHOUT reverse-shell protocol on the C2 channel, three rotating campaigns from one codebase |
+| [trees4sale](trees4sale/) | Residential-proxy relay (peer4you proxyware) with the DDoS engine removed; exposes exits directly via UPnP RELAY port-mappings |
 | [vibenet](vibenet/) | Custom DDoS-and-proxy family whose latest no-libc Linux build ships its own TLS/QUIC/HTTP3 stack to flood at Layer 7 behind a browser fingerprint, with on-chain ENS command-and-control |
 
 ## Reports
@@ -38,6 +40,7 @@ Standalone analyses that don't map to a single botnet family.
 | 2026-03-19 | [Pray4Bandwidth](reports/2026-03-19-xiongmai-packetsdk-ipidea.md) | Xiongmai DVR campaign deploying IPRoyal Pawns and IPIDEA PacketSDK via Mirai-derived downloader |
 | 2026-03-20 | [Aisuru ecosystem](reports/2026-03-20-aisuru-ecosystem.md) | Four DDoS botnets traced to one ecosystem via shared code, crypto, and infrastructure |
 | 2026-06-18 | [RoboVPN / Neunative](reports/2026-06-18-robovpn-neunative.md) | Commercial VPN bundling a residential-proxy SDK that shares the Vo1d/Popa C2 backend |
+| 2026-07-24 | [Jackskid's residential proxy, brought to you by UPnP](reports/2026-07-24-jackskid-residential-proxy-upnp.md) | A residential-proxy botnet that publishes its exits through UPnP, traced to the same operator as the jackskid DDoS family via a shared key and funding wallet |
 
 ## Feedback
 

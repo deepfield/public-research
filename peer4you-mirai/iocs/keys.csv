@@ -1,0 +1,5 @@
+key_hex,purpose,notes
+8badf00dfeedfaceabad1deac001d00d,config S-box KSA key,"16-byte key for the glibc-LCG S-box generation (multiplier 0x41c64e6d, addend 0x3039, seed 0xe0a4cbd6) used for config-string deobfuscation; byte-identical to the jackskid c1s.su-tier (garm scanner + i386 bot) RCtea key -> same operator"
+00d800a4,config LFSR polynomial,"Galois LFSR polynomial (seed 1) XORed into the config-string keystream (RC4-variant PRGA); config deobfuscation only, not the C2 wire crypto"
+41c64e6d,config S-box LCG multiplier,"glibc TYPE_0 LCG multiplier for the S-box KSA (addend 0x3039, seed 0xe0a4cbd6)"
+,C2 AEAD key,"no static key: the C2 wire crypto (byte-swapped ChaCha20 + HMAC-SHA256) is keyed per connection by an X25519 ECDH shared secret; sigma = 'expand 32-byte k'"
