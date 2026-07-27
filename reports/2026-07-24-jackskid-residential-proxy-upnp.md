@@ -2,7 +2,7 @@
 
 **Nokia Deepfield Emergency Response Team (ERT)**
 
-**First published: 2026-07-24**
+**First published: 2026-07-24** · **Updated: 2026-07-27** (see [edit history](#edit-history))
 
 ## Summary
 
@@ -60,7 +60,7 @@ The peer4you report and loader endpoints hide behind a theme. They live on `inhu
 
 A residential-proxy service is only as large as its supply of residential devices. peer4you-mirai enrolls the devices it infects by telnet scanning, and it does not stand alone: it is wired into a much larger DDoS operation, Jackskid.
 
-Jackskid is not new. It was [documented by Foresiet](https://foresiet.com/blog/mirai-botnet-jackskid-resurgence-nov-2025-iot-threats/) in November 2025, tracked by [CNCERT](https://www.secrss.com/articles/87776) as "RCtea," and known in the DDoS scene as "Mossad"; we placed it in the [Aisuru development lineage](2026-03-20-aisuru-ecosystem.md) via a custom RC4 modification (a 5-pass S-box scramble seeded with `0xe0a4cbd6`). One caveat on that nickname: "Mossad" here means Jackskid, not [MossadProxy](../mossadproxy/), a separate botnet we track with a different codebase and no shared lineage. Same word, different family. It was disrupted alongside the rest of the Aisuru cluster in the [March 2026 law-enforcement action](https://www.justice.gov/usao-ak/pr/authorities-disrupt-worlds-largest-iot-ddos-botnets-responsible-record-breaking-attacks) and regrouped. Today it resolves its C2 through Ethereum Name Service (ENS) and Solana Name Service (SNS) dead-drop records rather than DNS.
+Jackskid is not new. It was [documented by Foresiet](https://foresiet.com/blog/mirai-botnet-jackskid-resurgence-nov-2025-iot-threats/) in November 2025, tracked by [CNCERT](https://www.secrss.com/articles/87776) as "RCtea," and known in the DDoS scene as "Mossad"; we placed it in the [Aisuru development lineage](2026-03-20-aisuru-ecosystem.md) via a custom RC4 modification (a 5-pass S-box scramble seeded with `0xe0a4cbd6`). One caveat on that nickname: "Mossad" here means Jackskid, not [MossadProxy](../mossadproxy/), a separate botnet we track with a different codebase and no shared lineage. Same word, different family. It was disrupted alongside the rest of the Aisuru cluster in the [March 2026 law-enforcement action](https://www.justice.gov/usao-ak/pr/authorities-disrupt-worlds-largest-iot-ddos-botnets-responsible-record-breaking-attacks) and regrouped. Today it resolves its C2 through Ethereum Name Service (ENS) and Solana Name Service (SNS) dead-drop records rather than DNS, and in its newest builds those records point at a director rather than at the C2 servers themselves.
 
 What is new is that Jackskid now runs as two parallel sets of infrastructure that share almost nothing on the surface:
 
@@ -73,9 +73,19 @@ The first link between them is cryptographic. peer4you-mirai's config-deobfuscat
 
 The key is also a small act of self-expression. It reads like [hexspeak](https://en.wikipedia.org/wiki/Hexspeak): `8badf00d feedface abad1dea c001d00d`, four words of pronounceable hex. The third one is, if nothing else, an honest self-assessment.
 
-The most recent builds remove even the need to infer it. On 23 July, a Jackskid Android APK (`com.android.s4protect`, `1a9a54eb…`) changed shape: where earlier builds dropped a single DDoS bot, this one drops two binaries side by side. The first is the familiar `inix` DDoS bot; the second, `lol2`, is the peer4you relay, identifiable at runtime by the same `127.0.0.1:40538` ingress and the same 165-port `RELAY` table. Its director is a new domain, `persistfromchicago[.]com` (with `n1.` for node registration and a `tractor.` subdomain that echoes `tractor.trees4sale[.]net`), on the same Cloudflare account as `peer4you[.]net`. Somewhere between `inhumanencounters` and `tractor.trees4sale`, the operator's domain naming gave up on a house style and settled for moods. The proxy relay is no longer merely tied to Jackskid by a shared key; it now ships inside Jackskid's own Android payload, one process to flood targets and another to rent the device out.
+The late-July builds remove even the need to infer it. On 23 July, a Jackskid Android APK (`com.android.s4protect`, `1a9a54eb…`) changed shape: where earlier builds dropped a single DDoS bot, this one drops two binaries side by side. The first is the familiar `inix` DDoS bot; the second, `lol2`, is the peer4you relay, identifiable at runtime by the same `127.0.0.1:40538` ingress and the same 165-port `RELAY` table. Its director is a new domain, `persistfromchicago[.]com` (with `n1.` for node registration and a `tractor.` subdomain that echoes `tractor.trees4sale[.]net`), on the same Cloudflare account as `peer4you[.]net`. Somewhere between `inhumanencounters` and `tractor.trees4sale`, the operator's domain naming gave up on a house style and settled for moods. The proxy relay is no longer merely tied to Jackskid by a shared key; it ships inside Jackskid's own Android payload, one process to flood targets and another to rent the device out. The tier it ships in is the original one: the APK's DDoS payload resolves through `burrberry[.]eth`, `ukranianhorseriding[.]eth`, and `24carnforth2merseyside[.]sol`, all Tier A dead-drops, rather than the Tier B set that shares the key with peer4you-mirai. Both tiers have now carried the relay.
+
+That build did not last. On 27 July the same delivery node served a renamed APK, `com.android.wall.color.cinnamon` (`695ab309…`), that drops `lol2` and reverts to a single payload; the DDoS binary inside is byte-identical to the one shipped since 20 July. On Android, the dual-payload design looks like a four-day experiment. The rest of that rotation is anti-blocklist churn, new package name, new signing certificate, new campaign tag, and no new capability.
 
 The Linux side goes further still. In the Tier B DDoS builds from late July, the relay is not even a separate module: it is compiled into the DDoS bot itself. The MIPS and ARM samples we examined (`06c4ddab`, `01d5fba3`) carry, alongside the usual flood handlers and the `.ffaaxx`/`telnet.echo` loader, the peer4you relay's exact SOAP `AddPortMapping` envelope (`NewPortMappingDescription>RELAY`), the SSDP `InternetGatewayDevice` discovery, and the `POST /heartbeat` telemetry with its `connections=…&bandwidth=…` body, reported to a localhost coordinator rather than the remote director the standalone proxy families beacon to. The same binary that floods a target will, on the same device, open the router and stand up a residential relay. At that point the line between the DDoS botnet and the proxy service is not architectural; it is just which thread you happen to be looking at.
+
+### The bot's own residential mesh
+
+The Android build's DDoS payload (`b4b1ace7`, the unpacked `inix` bot) sends `GET /nodes?key=meowmeowmeow` to a director on tcp/`9000`, gets back a JSON array of roughly two hundred residential IP addresses, and dials them on Jackskid's own C2 port pool. Those are C2 relay nodes, which makes this a third job for residential hardware in this cluster, after proxy exits and attack sources.
+
+The bot finds the director on-chain. It reads the `node` text record of `burrberry[.]eth` and applies the same `0x80408454` per-octet transform Jackskid uses elsewhere, turning `2001:db8:ab9c:5da3::1` into `93.114.194[.]75`. That address already appears in this report: it is `tractor.persistfromchicago[.]com`, the peer4you relay director for the Android `lol2` module. One box, running the DDoS arm's C2 director and the proxy arm's relay director. The decompile also reverses the tier order we had assumed: `/nodes` is tried first, with the ENS `network` pool and the SNS record as fallbacks, so blocking the director buys about ten seconds before the bot falls through to the cloud pool. (One function called ahead of each tier is not fully reversed and may add a cache or anti-analysis gate; it does not change that.)
+
+Sampling the director returned about 270 peers per snapshot, roughly half of them rotated out within ninety minutes, and 492 distinct addresses in total: CHINANET, Iran Telecom, BT, Safaricom, KT, the geography a residential-proxy catalogue advertises. These are compromised victims, so we are not publishing them as indicators; the list is held for CERT and law-enforcement sharing. The proxy arm rents such devices out; the DDoS arm routes its own control traffic through them.
 
 The two tiers also share a delivery host, `162.249.125[.]141`, running the older tier's `inix` loader on `:2377` and the newer tier's garm scanner on `:80`, and a taste for the same corner of the address space. But the clearest evidence that one operator runs both is the funding.
 
@@ -85,7 +95,7 @@ The operator did the hard part of compartmentalization well. Every attribute an 
 
 Two things tie the tiers back together. The first is on-chain: both name-owner wallets, `0x435c…` (original tier) and `0x45c5…` (`c1s[.]su` tier), were funded from the same upstream wallet, `0xc70d…8371`, a small dedicated funder rather than an exchange or mixer. On-chain records are public and permanent, which is what makes the observation worth recording; we do not push the wallet analysis past that single link. The second is the key: `8badf00d…` is byte-identical between peer4you-mirai and the `c1s[.]su` tier, and because a config key is a one-line change, a reused one is worth noting mainly for what the builder did not bother to rotate.
 
-Around those two anchors, the passive-DNS record agrees. A single host, `217.60.195[.]160` (SWISSNET LLC, AS209373, NL), has at various points co-hosted the `c1s[.]su` and `tvt.c1s[.]su` delivery infrastructure (Jackskid), `inhumanencounters[.]org` (peer4you), and `login.trees4sale[.]net` (trees4sale): all three families on one box. That same IP is also the value the original Jackskid tier's `burrberry.eth` "node" record decodes to, a binary-side anchor rather than a DNS one, so the box touches both Jackskid tiers and both proxy families. The `c1s[.]su` zone sits on the operator's recurring Cloudflare nameserver pair (`cleo` / `gabriella`), the pair we associate with the wider Jackskid/Aisuru operator cluster; `peer4you[.]net` is also on Cloudflare, on a different pair (`arushi` / `trace`). The proxy directors consolidated onto the shared node `185.104.63[.]79` (INTERKVM/ZetServers) in mid-July.
+Around those two anchors, the passive-DNS record agrees. A single host, `217.60.195[.]160` (SWISSNET LLC, AS209373, NL), has at various points co-hosted the `c1s[.]su` and `tvt.c1s[.]su` delivery infrastructure (Jackskid), `inhumanencounters[.]org` (peer4you), and `login.trees4sale[.]net` (trees4sale): all three families on one box. That same IP is also what the original Jackskid tier's `burrberry.eth` "node" record decoded to on 30 June, a binary-side anchor rather than a DNS one, so the box touches both Jackskid tiers and both proxy families. (That record has since rotated: by 27 July it pointed at `93.114.194[.]75`, the `/nodes` director above.) The `c1s[.]su` zone sits on the operator's recurring Cloudflare nameserver pair (`cleo` / `gabriella`), the pair we associate with the wider Jackskid/Aisuru operator cluster; `peer4you[.]net` is also on Cloudflare, on a different pair (`arushi` / `trace`). The proxy directors consolidated onto the shared node `185.104.63[.]79` (INTERKVM/ZetServers) in mid-July.
 
 ### Cluster map
 
@@ -100,8 +110,8 @@ Around those two anchors, the passive-DNS record agrees. A single host, `217.60.
   +----------------+      +----------------+      +----------------+
   |   jackskid     |      | peer4you-mirai |      |   trees4sale   |
   | DDoS (RCtea),  |      | Mirai + relay  |      |  relay only,   |
-  | 2 tiers; tier  |      | (the bridge)   |      | no attack code |
-  | B embeds relay |      |                |      |                |
+  | 2 tiers, both  |      | (the bridge)   |      | no attack code |
+  | carrying relay |      |                |      |                |
   +----------------+      +----------------+      +----------------+
 
   ties
@@ -109,8 +119,12 @@ Around those two anchors, the passive-DNS record agrees. A single host, `217.60.
     .ffaaxx loader, shared www.c1s[.]su pool
   - peer4you-mirai <-> trees4sale: same peer4you relay code, peer4you[.]net,
     shared node 185.104.63[.]79
-  - jackskid tier B ELF + Android lol2 now embed the peer4you relay itself:
-    UPnP AddPortMapping RELAY + SSDP + /heartbeat (verified 06c4ddab / 01d5fba3)
+  - jackskid tier B ELF compiles the peer4you relay in: UPnP AddPortMapping
+    RELAY + SSDP + /heartbeat (verified 06c4ddab / 01d5fba3)
+  - jackskid tier A shipped the relay as a second Android payload (lol2,
+    07-23 build only; dropped again on 07-27)
+  - jackskid tier A /nodes C2 director = 93.114.194[.]75 =
+    tractor.persistfromchicago[.]com, the lol2 relay director
 ```
 
 Every cluster like this eventually reaches [the red-string-and-corkboard stage](https://knowyourmeme.com/memes/pepe-silvia); we are aware of how the board looks.
@@ -123,14 +137,14 @@ The same split, attribute by attribute. The cells that repeat give it away: the 
 |---|---|---|---|---|
 | Role | DDoS botnet | DDoS botnet (now embeds relay) | Mirai DDoS + proxy relay (bridge) | proxy relay only |
 | Config cipher | RCtea; keys `DEADBEEF` / `08453CD1` / ARX | RCtea; key `8badf00d…` | RCtea; key `8badf00d…` (= Tier B) | none (plaintext) |
-| C2 resolution | ENS + SNS dead-drops | ENS + SNS dead-drops, plus DNS | DNS (A record) | plaintext domains in binary |
+| C2 resolution | ENS `node` → `/nodes` director (primary), then ENS + SNS dead-drops | ENS + SNS dead-drops, plus DNS | DNS (A record) | plaintext domains in binary |
 | ENS / SNS dead-drops | `ukranianhorseriding[.]eth`, `burrberry[.]eth`; `24carnforth2merseyside[.]sol` | `meower[.]eth`; `roanoke[.]sol`, `telnet[.]sol` | n/a | n/a |
 | C2 / director domains (DNS) | n/a | `c1s[.]su` (`www.`/`sc.`/`tvt.`), `nvms9000[.]online` | `www.c1s[.]su`, `i.`/`o.peer4you[.]net`, `inhumanencounters[.]org` | `trees4sale[.]net`, `peer4you[.]net` |
 | C2 hosting | Akamai / Tencent / Alibaba pool | `c1s[.]su` pool (1337 Services / Akamai) | same `c1s[.]su` pool | `185.104.63[.]79` |
 | Wire crypto | v3 78-byte plaintext frames | v3 78-byte plaintext frames | X25519 + ChaCha20 + HMAC-SHA256 | telemetry to director |
 | Loader / spread | `inix` campaigns | `.ffaaxx` echo-drop + garm telnet scanner; TVT/NVMS9000 DVR | `.ffaaxx` echo-drop + telnet scanner (TJ2100N GPON) | none (relay only) |
 | Attack engine | Jackskid v3 (opcodes 0-19) | Jackskid v3 (opcodes 0-19) | Mirai TLV (16 vectors) | none |
-| Proxy relay | none | peer4you relay embedded (Tier B ELF + Android `lol2`) | peer4you relay (UPnP `RELAY` + `ONLINE`) | peer4you relay (UPnP `RELAY` + `ONLINE`) |
+| Proxy relay | peer4you relay as a second Android payload (`lol2`; 07-23 build only, dropped 07-27) | peer4you relay compiled into the ELF | peer4you relay (UPnP `RELAY` + `ONLINE`) | peer4you relay (UPnP `RELAY` + `ONLINE`) |
 | Name-owner wallet | `0x435c…` | `0x45c5…` | n/a | n/a |
 | Funder wallet | `0xc70d…` | `0xc70d…` | n/a | n/a |
 
@@ -149,6 +163,8 @@ The same split, attribute by attribute. The cells that repeat give it away: the 
 | 2026-07-13 → 07-15 | proxy directors consolidate onto the shared node `185.104.63[.]79` |
 | 2026-07-17 | Jackskid `c1s[.]su` tier's on-chain build-out: wallet `0x45c5` + `meower.eth` + two Solana names, all in one day |
 | 2026-07-23 | a Jackskid Android APK (`com.android.s4protect`) ships the peer4you relay (`lol2`) beside its DDoS bot; new relay director `persistfromchicago[.]com` |
+| 2026-07-27 | the Android line reverts to a single payload: `com.android.wall.color.cinnamon` (`695ab309…`) drops `lol2`, DDoS binary unchanged since 07-20 |
+| 2026-07-27 | detonation of that DDoS payload (`b4b1ace7`) exposes the `/nodes` director tier and its residential C2 mesh; `burrberry.eth[node]` now decodes to `93.114.194[.]75` (= `tractor.persistfromchicago[.]com`) |
 
 ### Confidence
 
@@ -157,15 +173,16 @@ The same split, attribute by attribute. The cells that repeat give it away: the 
 | Jackskid `c1s[.]su` tier ↔ peer4you-mirai | Byte-identical `8badf00d` RCtea key (S-box reproduced exactly), shared `.ffaaxx` loader, shared `www.c1s[.]su` C2 pool | High |
 | Jackskid original tier ↔ `c1s[.]su` tier | One operator, compartmentalized: shared funder wallet `0xc70d`, shared delivery host `162.249.125[.]141`, common RCtea construction | High (one operator) |
 | peer4you-mirai ↔ trees4sale | Same peer4you relay code (UPnP `RELAY` + `ONLINE` telemetry), shared `peer4you[.]net`, co-hosted on `185.104.63[.]79` | High |
-| Jackskid Tier B + Android build embed the peer4you relay | UPnP `AddPortMapping` `RELAY` + SSDP IGD + `/heartbeat`, verified in Tier B ELF `06c4ddab`/`01d5fba3` and the `lol2` module | High |
-| Jackskid ↔ trees4sale | Now share the peer4you relay code (Jackskid's Tier B and Android builds embed it; trees4sale is built on it), plus hosting (AS25198 INTERKVM) and the cross-tenant `tractor.trees4sale[.]net` → Jackskid delivery host | High (upgraded from transitive) |
+| Both Jackskid tiers have carried the peer4you relay | Tier B: UPnP `AddPortMapping` `RELAY` + SSDP IGD + `/heartbeat` compiled into ELF `06c4ddab`/`01d5fba3`. Tier A: the `lol2` module in the 07-23 Android build, whose DDoS payload resolves through Tier A dead-drops | High |
+| Jackskid Tier A ↔ peer4you (infrastructure) | `burrberry.eth[node]` decodes to `93.114.194[.]75`, which is also `tractor.persistfromchicago[.]com`, the `lol2` relay director; verified by detonation | High |
+| Jackskid ↔ trees4sale | Now share the peer4you relay code (Jackskid's Tier B ELFs compile it in and its Android build shipped it for one build; trees4sale is built on it), plus hosting (AS25198 INTERKVM) and the cross-tenant `tractor.trees4sale[.]net` → Jackskid delivery host | High (upgraded from transitive) |
 | single operator | `c1s[.]su` on the Cloudflare `cleo`/`gabriella` nameserver pair, plus the shared crypto, loader, and hosting above | Observation |
 
 ## What this means
 
 The interesting part of this cluster is not that it does both DDoS and residential proxying. Plenty of families do; we have documented dual-purpose botnets before, and the convergence of the two markets is by now a well-worn observation. What is interesting is the *shape* the operator chose.
 
-The operator productized the two functions: a DDoS family, a pure-proxy family with the attack code deliberately removed, and a bridge build that does both, each with its own names, infrastructure, and branding but one back office behind them. That is a business decision more than an engineering one, and it lets the proxy side show a clean face to its customers while the DDoS operation carries the risk. The most recent builds complicate that separation: the relay is now compiled straight into the Tier B DDoS bots and shipped as a second payload in the Android APK, so under the split branding the two products are converging back into single binaries. The marketing stayed separate; the code did not.
+The operator productized the two functions: a DDoS family, a pure-proxy family with the attack code deliberately removed, and a bridge build that does both, each with its own names, infrastructure, and branding but one back office behind them. That is a business decision more than an engineering one, and it lets the proxy side show a clean face to its customers while the DDoS operation carries the risk. The most recent builds complicate that separation, though unevenly. On Linux the relay is compiled straight into the Tier B DDoS bots and has stayed there. On Android it shipped as a second payload for exactly one build before being dropped again four days later, which reads more like an experiment than a direction. And the DDoS bot's own control traffic now runs over a mesh of residential victims, fronted by the same box that directs the proxy relay. The marketing stayed separate; the code keeps leaking across.
 
 The operator also chose to expose the residential exit rather than hide it, which is the distinctive part and, for them, the costly one. The UPnP `RELAY` mechanism trades a quiet tunnel for a loud, self-labelling footprint a defender can catch on the router, on the LAN, and from outside. The scalability gain is a detection surface.
 
@@ -174,12 +191,12 @@ And for all the effort to look like a varied threat landscape, the cluster comes
 For defenders, the practical takeaways are short:
 
 - **Watch the router.** IGD port-mappings described `RELAY`, and bursts of SOAP `AddPortMapping` following SSDP `M-SEARCH` from an end host, are high-fidelity indicators of these proxy nodes, observable on the LAN without touching the malware.
-- **Block the directors.** The peer4you and trees4sale director and loader hosts (below) are shared across both proxy families; blocking them degrades both.
-- **Treat flooding and proxying as one population.** In the newest builds the same device does both, so a host flagged for DDoS is now a candidate open proxy, and the reverse; clearing one function does not remove the other.
+- **Block the directors, but know what that buys.** The peer4you and trees4sale director and loader hosts (below) are shared across both proxy families; blocking them degrades both. The DDoS side is not the same: its `/nodes` director is one of three resolution paths, and denying it alone just moves the bot to its cloud C2 pool within about ten seconds. That tier has to be cut at all three paths at once.
+- **Treat flooding and proxying as one population.** The same device does both in the Tier B Linux builds, so a host flagged for DDoS is a candidate open proxy, and the reverse; clearing one function does not remove the other. A residential host being dialed by a Jackskid bot may also be neither target nor exit, but a C2 relay.
 
 ## Provenance and attribution
 
-This analysis rests on reverse engineering of the malware, cryptographic comparison of config ciphers, public passive-DNS history, and read-only public-blockchain records (ENS and SNS registrations and Ethereum wallet funding are open ledgers). An anonymous tip in July 2026 pointed us at a Jackskid i386 sample and at infrastructure we were already tracking. Consistent with our attribution practice, we attribute on code, cryptography, and infrastructure, not on operator-identity claims from third parties; the on-chain wallets named here are addresses, not identities.
+This analysis rests on reverse engineering of the malware, cryptographic comparison of config ciphers, public passive-DNS history, and read-only public-blockchain records (ENS and SNS registrations and Ethereum wallet funding are open ledgers). The `/nodes` findings additionally rest on a controlled detonation of the Android build's DDoS payload, run in an isolated environment with egress sinkholed so that no attack traffic left the sandbox, and on paced direct queries to the director. An anonymous tip in July 2026 pointed us at a Jackskid i386 sample and at infrastructure we were already tracking. Consistent with our attribution practice, we attribute on code, cryptography, and infrastructure, not on operator-identity claims from third parties; the on-chain wallets named here are addresses, not identities.
 
 ## Indicators of compromise
 
@@ -207,8 +224,12 @@ Full machine-readable indicators are published alongside this report:
 | `185.104.63[.]79` | Shared node: peer4you backconnect + trees4sale director |
 | `meower[.]eth` / `ukranianhorseriding[.]eth` / `burrberry[.]eth` | Jackskid ENS C2 resolution |
 | `persistfromchicago[.]com` (`n1.` / `tractor.`) | peer4you relay director for the Jackskid Android build (`lol2`) |
-| `162.35.179[.]210`, `93.114.194[.]75` | persistfromchicago relay directors (`n1.` node-assignment, `tractor.` management) |
-| `com.android.s4protect` (APK `1a9a54eb…`) | Jackskid Android dual-payload build carrying DDoS bot + peer4you relay |
+| `162.35.179[.]210` | `n1.persistfromchicago[.]com`, relay node-assignment |
+| `93.114.194[.]75` | `tractor.persistfromchicago[.]com`: relay management, and Jackskid's `/nodes` C2 director on tcp/`9000` |
+| `GET /nodes?key=meowmeowmeow` to tcp/`9000` | Jackskid director fetch returning the residential C2 relay mesh (peers are victims; not published as indicators) |
+| `burrberry[.]eth` text `node` → `0x80408454` | On-chain derivation of the `/nodes` director IP |
+| `com.android.s4protect` (APK `1a9a54eb…`) | Jackskid Android dual-payload build carrying DDoS bot + peer4you relay (07-23) |
+| `com.android.wall.color.cinnamon` (APK `695ab309…`) | 07-27 rotation: same DDoS payload, relay dropped, package renamed |
 
 ### Key cryptographic indicator
 
@@ -222,6 +243,14 @@ Full machine-readable indicators are published alongside this report:
 - Nokia Deepfield ERT and Comcast, [Reverse-engineering Jackskid](../jackskid/report.md). Prior Jackskid analysis.
 - Foresiet, [Mirai Botnet Jackskid Resurgence](https://foresiet.com/blog/mirai-botnet-jackskid-resurgence-nov-2025-iot-threats/) (Nov 2025). First public documentation of the Jackskid family.
 - CNCERT / SecRSS, [RCtea botnet risk advisory](https://www.secrss.com/articles/87776) (Feb 2026). Jackskid documented as "RCtea".
+
+## Edit history
+
+- **2026-07-27:** Corrections and additions following reverse engineering of the Android build's DDoS payload (`b4b1ace7`) and a controlled detonation of it.
+  1. The 07-23 Android dual-payload build (`1a9a54eb`) was attributed to Jackskid's Tier B, with Tier A recorded as carrying no proxy relay. Its DDoS payload resolves C2 through `burrberry[.]eth`, `ukranianhorseriding[.]eth`, and `24carnforth2merseyside[.]sol`, which makes it a Tier A build. Both tiers have therefore carried the peer4you relay. Corrected in the comparison table, the cluster map, and the confidence table.
+  2. The Android dual-payload design was reverted. On 27 July the delivery node served `com.android.wall.color.cinnamon` (`695ab309…`), which drops the `lol2` relay and returns to a single payload; the DDoS binary is byte-identical to the 07-20 build. The original text described the DDoS and proxy code as converging in "the newest builds"; that holds for the Tier B Linux ELFs, which still compile the relay in, but on Android the dual-payload design lasted one build. Tempered in "The DDoS arm that stocks the shelves" and "What this means".
+  3. Added "The bot's own residential mesh": the `GET /nodes?key=meowmeowmeow` director tier, its rotating mesh of compromised residential devices used as C2 relays, and the dual role of `93.114.194[.]75` as both the `lol2` relay director and Jackskid's `/nodes` C2 director. The `/nodes` tier is resolved first, ahead of the ENS and SNS dead-drops, which changes the "block the directors" advice for the DDoS side.
+  4. `burrberry.eth`'s `node` record no longer decodes to `217.60.195[.]160`; it rotated to `93.114.194[.]75`. Fixed the tense in "One operator".
 
 ## Feedback
 
