@@ -2,7 +2,7 @@
 
 **Nokia Deepfield Emergency Response Team (ERT)**
 
-**First published: 2026-07-24** · **Updated: 2026-07-27** (see [edit history](#edit-history))
+**First published: 2026-07-24** · **Updated: 2026-07-28** (see [edit history](#edit-history))
 
 ## Summary
 
@@ -18,6 +18,8 @@ Pulling on that one design choice, exposing the exit through UPnP instead of tun
 
 UPnP's Internet Gateway Device protocol exists so that a game console or a video-call app can ask the home router to open a port without the user ever learning what a port is. The router trusts anything on the local network to make that request, which is roughly why UPnP has spent the better part of two decades near the top of every ["things to turn off on your router"](https://www.rapid7.com/blog/post/2013/01/29/security-flaws-in-universal-plug-and-play-unplug-dont-play/) list. The protocol was built to spare users the indignity of manual port-forwarding. It turns out it spares malware the same indignity.
 
+In 2018 [Akamai SIRT found 65,000 routers](https://web.archive.org/web/20250906142032/https://www.akamai.com/site/en/documents/research-paper/upnproxy-blackhat-proxies-via-nat-injections-white-paper.pdf) already carrying malicious NAT entries, proxying everything from click fraud to APT command traffic. Those injections came over the WAN, against gateways that had exposed their UPnP control plane by mistake; this operator does not need the mistake, because its code is already on the LAN. The paper's worked example opened external port 5555, "chosen at random." On the [Android TV boxes this operator infects](../jackskid/report.md), 5555 is ADB: the way in, and the port the bot closes behind it.
+
 Reverse-engineered, the relay's startup is unremarkable UPnP right up to one field. It binds a local ingress, runs an SSDP discovery for the router's Internet Gateway Device, and asks the router to open 165 ports from a fixed table. The description attached to every one of those mappings is the tell:
 
 ```
@@ -25,6 +27,8 @@ NewPortMappingDescription=RELAY
 ```
 
 That is the whole idea. A residential-proxy exit that would normally hide behind a backconnect tunnel is instead published on the home router's external interface, 165 ports wide, each one labelled with what it is. A client connects to a mapped port, the bot bridges it onward, and the line gets benchmarked first, the way a rideshare platform vets a car. Slow inventory does not sell.
+
+Operators [keep signing this field](https://github.com/chadillac/UPnProxyPot). The UPnProxy research fingerprinted whole campaigns by it: `node:nat:upnp`, then `galleta silenciosa`, "silent cookie," for the Eternal Silence injections. Eight years and an inverted technique later, the habit holds. The field accepts an empty string.
 
 None of this is quiet. Where a backconnect tunnel is a single outbound connection, this is an SSDP burst, then 165 SOAP calls to the gateway, then 165 external ports left open on a home router with `RELAY` typed into the description of each, a field the router's own admin page will read back to anyone who looks. The operator traded stealth for scale: exposing the exit through the router's own NAT traversal is lighter than a per-victim reverse tunnel and holds a large fleet without a director keeping a socket open for every node. Most proxy malware pays for that scale in stealth. This one declined to pay, and wrote `RELAY` on the receipt.
 
@@ -243,9 +247,11 @@ Full machine-readable indicators are published alongside this report:
 - Nokia Deepfield ERT and Comcast, [Reverse-engineering Jackskid](../jackskid/report.md). Prior Jackskid analysis.
 - Foresiet, [Mirai Botnet Jackskid Resurgence](https://foresiet.com/blog/mirai-botnet-jackskid-resurgence-nov-2025-iot-threats/) (Nov 2025). First public documentation of the Jackskid family.
 - CNCERT / SecRSS, [RCtea botnet risk advisory](https://www.secrss.com/articles/87776) (Feb 2026). Jackskid documented as "RCtea".
+- Akamai SIRT, [UPnProxy: Blackhat Proxies via NAT Injections](https://web.archive.org/web/20250906142032/https://www.akamai.com/site/en/documents/research-paper/upnproxy-blackhat-proxies-via-nat-injections-white-paper.pdf) (2018) and [UPnProxy: Eternal Silence](https://www.akamai.com/blog/security/upnproxy-eternal-silence) (2018). The original research on UPnP IGD abused to build proxy infrastructure, and the source of the description-field fingerprinting method this report reuses. That work injected NAT entries from the WAN into gateways whose control plane was exposed by mistake; the cluster here drives the same primitive from the LAN, where the router grants the access for free. Tooling: [UPnProxyPot](https://github.com/chadillac/UPnProxyPot), an SSDP/UPnP honeypot for tracking injection campaigns (DEF CON 29).
 
 ## Edit history
 
+- **2026-07-28:** Added prior-art citations to Akamai SIRT's UPnProxy research (2018) in "165 doors labelled RELAY" and in the references, including the description-field fingerprinting method that report's detection guidance reuses. No findings or indicators changed.
 - **2026-07-27:** Corrections and additions following reverse engineering of the Android build's DDoS payload (`b4b1ace7`) and a controlled detonation of it.
   1. The 07-23 Android dual-payload build (`1a9a54eb`) was attributed to Jackskid's Tier B, with Tier A recorded as carrying no proxy relay. Its DDoS payload resolves C2 through `burrberry[.]eth`, `ukranianhorseriding[.]eth`, and `24carnforth2merseyside[.]sol`, which makes it a Tier A build. Both tiers have therefore carried the peer4you relay. Corrected in the comparison table, the cluster map, and the confidence table.
   2. The Android dual-payload design was reverted. On 27 July the delivery node served `com.android.wall.color.cinnamon` (`695ab309…`), which drops the `lol2` relay and returns to a single payload; the DDoS binary is byte-identical to the 07-20 build. The original text described the DDoS and proxy code as converging in "the newest builds"; that holds for the Tier B Linux ELFs, which still compile the relay in, but on Android the dual-payload design lasted one build. Tempered in "The DDoS arm that stocks the shelves" and "What this means".
