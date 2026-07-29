@@ -6,3 +6,5 @@ e0a4cbd6,lcg_seed,RC4 LCG 5-pass S-box scramble seed; shared with Aisuru gen2
 41c64e6d / 3039,lcg_constants,Multiplier / addend; matches glibc rand() TYPE_0
 D800A4,lfsr_polynomial,32-bit Galois LFSR polynomial in PRGA keystream generation
 jilcore.6.so|jipplib.1.so|jibdata.2.so|jiblib.5.so,bot_self_id,Bot self-identification strings in /proc/*/maps (richy/c654028d build)
+08453CD1 F95D5C27 61211CBD E30F3B9C,rc4_key,"Tier A custom-RC4 config key, reused without rotation across the wolfSSL builds 1c5080b6, 461a9036 and 68a63962; 4 LE dwords d13c4508/275c5df9/bd1c2161/9c3b0fe3; LCG seed e0a4cbd6, LFSR polynomial 0xd800a4, seed 0xf31c8b2e; output whitening (x<<3|x>>5)^(x>>4)"
+8BADF00D FEEDFACE ABAD1DEA C001D00D,rc4_key,"Tier B (c1s.su) custom-RC4 config key, byte-identical to the peer4you-mirai config-deobfuscation key; this is the cryptographic link between the Jackskid c1s.su tier and the peer4you proxy family. Rebuilding the S-box from 8badf00d reproduces peer4you-mirai's hardcoded table exactly, with the same 0xe0a4cbd6 LCG seed, 0xd800a4 LFSR polynomial and output whitening. Absent from the Tier A builds"
