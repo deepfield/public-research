@@ -17,5 +17,5 @@ ip,port,role,asn_org,country,first_seen,status,notes
 169.40.135.69,80,staging_http,unspecified (AS209274),GB,2026-03-17,down,Served /1000mgofpotassiumaday/arm7 (vitacoco campaign)
 92.38.186.44,6996,staging_http,unspecified,,2026-04-24,down,Served /iambigbigbigbigguy/arm7 (iambig campaign)
 92.38.186.44,25565,staging_nc,unspecified,,2026-04-24,down,Raw TCP fallback for binary delivery (iambig campaign)
-45.153.34.26,80,staging_http,unspecified,,2026-04-22,active,Served /havanagila123/{arm,arm7,mips,x86} (havanagila campaign); arm7 last rebuilt 2026-05-10 (cd8420b5...)
+45.153.34.26,80,staging_http,unspecified,,2026-04-22,active,"Served /havanagila123/{arm,arm7,mips,x86} (havanagila campaign); arm7 last rebuilt 2026-05-10 (cd8420b5...)"
 117.55.203.189,80,staging_http,unspecified,,2026-05-18,observed,Served /jewishgoldowner/arm7 (botlesscucks campaign)
